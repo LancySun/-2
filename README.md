@@ -1,1243 +1,1490 @@
-1111A053S_overview.html
-<!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ATOM | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-        page. However, you can choose any other skin. Make sure you
-        apply the skin class to the body tag so the changes take effect. -->
-  <link rel="stylesheet" href="css/skin-blue.min.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to get the
-desired effect
-|---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-
-  <!-- Main Header -->
-  <header class="main-header">
-
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>ATOM</b></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>ATOM</b> - Dashboard</span>
-    </a>
-
-    <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
-            <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
-              <li>
-                <!-- inner menu: contains the messages -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        <!-- User Image -->
-                        <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                </ul>
-                <!-- /.menu -->
-              </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
-            </ul>
-          </li>
-          <!-- /.messages-menu -->
-
-          <!-- Notifications Menu -->
-          <li class="dropdown notifications-menu">
-            <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- Inner Menu: contains the notifications -->
-                <ul class="menu">
-                  <li><!-- start notification -->
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <!-- end notification -->
-                </ul>
-              </li>
-              <li class="footer"><a href="#">View all</a></li>
-            </ul>
-          </li>
-          <!-- Tasks Menu -->
-          <li class="dropdown tasks-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
-              <li>
-                <!-- Inner menu: contains the tasks -->
-                <ul class="menu">
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <!-- Task title and progress text -->
-                      <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
-                      </h3>
-                      <!-- The progress bar -->
-                      <div class="progress xs">
-                        <!-- Change the css width attribute to simulate progress -->
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                </ul>
-              </li>
-              <li class="footer">
-                <a href="#">View all tasks</a>
-              </li>
-            </ul>
-          </li>
-          <!-- User Account Menu -->
-          <li class="dropdown user user-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <!-- The user image in the navbar-->
-              <img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">ARTIK SQA team</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- The user image in the menu -->
-              <li class="user-header">
-                <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
-
-                <p>
-                  ARTIK SQA team
-                  <small>Since 2016</small>
-                </p>
-              </li>
-              <!-- Menu Body -->
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
-                  </div>
-                </div>
-                <!-- /.row -->
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">Workgroup</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li><a href="index.html"><i class="fa fa-link"></i> <span>CI overview</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-        <li class="treeview active menu-open">
-          <a href="#"><i class="fa fa-link"></i> <span>View by model</span>
-            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="A053S_overview.html">A053S</a></li>
-            <li><a href="#">A055S</a></li>
-            <li><a href="#">A305S</a></li>
-            <li><a href="#">A530S</a></li>
-            <li><a href="#">A710S</a></li>
-            <li><a href="#">Eagleye530</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        A053S overview
-        <small><script type="text/javascript">var myDate = new Date();document.write(myDate.toLocaleString());</script></small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Refresh</a></li>
-        <!--<li class="active">Here</li>-->
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <!-- LINE CHART -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">CI trend in recent 30-days</h3>
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="lineChart" style="height:250px"></canvas>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>        
-        <div class="col-md-6">
-          <!-- DONUT CHART -->
-          <div class="box box-danger">
-            <div class="box-header with-border">
-              <h3 class="box-title">Defect level</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <canvas id="pieChart" style="height:250px"></canvas>
-            </div>
-            <!-- /.box-body -->
-          </div>
-        </div>        
-        <div class="col-md-6">
-          <!-- DONUT CHART -->
-          <div class="box box-danger">
-            <div class="box-header with-border">
-              <h3 class="box-title">Test case</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <canvas id="pieChart" style="height:250px"></canvas>
-            </div>
-            <!-- /.box-body -->
-          </div>
-        </div>        
-      </div>
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="pull-right hidden-xs">v0.01_20180514</div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 - 2018 <a href="mailto:chao.wee@samsung.com">IoT SQA team</a>.</strong> All rights reserved.
-  </footer>
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Home tab content -->
-      <div class="tab-pane active" id="control-sidebar-home-tab">
-        <h3 class="control-sidebar-heading">Recent Activity</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:;">
-              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-                <p>Will be 23 on April 24th</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-        <h3 class="control-sidebar-heading">Tasks Progress</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:;">
-              <h4 class="control-sidebar-subheading">
-                Custom Template Design
-                <span class="pull-right-container">
-                  <span class="label label-danger pull-right">70%</span>
-                </span>
-              </h4>
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-      </div>
-      <!-- /.tab-pane -->
-      <!-- Stats tab content -->
-      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-      <!-- /.tab-pane -->
-      <!-- Settings tab content -->
-      <div class="tab-pane" id="control-sidebar-settings-tab">
-        <form method="post">
-          <h3 class="control-sidebar-heading">General Settings</h3>
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Report panel usage
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-            <p>
-              Some information about this general settings option
-            </p>
-          </div>
-          <!-- /.form-group -->
-        </form>
-      </div>
-      <!-- /.tab-pane -->
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-  immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
-
-<!-- REQUIRED JS SCRIPTS -->
-<!-- jQuery 3 -->
-<script src="js/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="js/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="js/adminlte.min.js"></script>
-<script src="js/Chart.js"></script>
-
-<script>
-  $(function () {
-    var areaChartData = {
-      labels  : ['2018/5/23', '2018/5/22', '2018/5/21', '2018/5/20', '2018/5/19', '2018/5/18', '2018/5/17', '2018/5/16', '2018/5/15', '2018/5/14', '2018/5/13', '2018/5/12', '2018/5/11', '2018/5/10', '2018/5/9', '2018/5/8', '2018/5/7', '2018/5/6', '2018/5/5', '2018/5/4', '2018/5/3', '2018/5/2', '2018/5/1', '2018/4/30', '2018/4/29', '2018/4/28', '2018/4/27', '2018/4/26', '2018/4/25', '2018/4/24'],
-      //labels  : ['A053S', 'A055S', 'A305S', 'A530', 'A530S', 'A530S 1G', 'Eagleyle530', 'A710', 'A710S'],
-      datasets: [
-        {
-          label               : 'Critical',
-          fillColor           : 'rgba(255, 0, 0, 1)',
-          strokeColor         : 'rgba(255, 0, 0, 1)',
-          pointColor          : 'rgba(255, 0, 0, 1)',
-          pointStrokeColor    : '#c1c7d1',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(255, 0, 0, 1)',
-          data                : [65, 59, 80, 81, 56, 55, 40, 59, 80, 59, 80, 81, 56, 55, 40, 59, 80, 59, 80, 81, 56, 55, 40, 59, 80, 59, 80, 81, 56, 55, 40, 59, 80]
-        },
-        {
-          label               : 'Major',
-          fillColor           : 'rgba(60,141,188,0.9)',
-          strokeColor         : 'rgba(60,141,188,0.8)',
-          pointColor          : '#3b8bba',
-          pointStrokeColor    : 'rgba(60,141,188,1)',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(60,141,188,1)',
-          data                : [20, 80, 200, 40, 80, 33, 20, 88, 40, 80, 200, 40, 80, 33, 20, 88, 40, 80, 200, 40, 80, 33, 20, 88, 40, 80, 200, 40, 80, 33, 20, 88, 40]
-        },
-        {
-          label               : 'Minor',
-          fillColor           : 'rgba(0,255,0,0.9)',
-          strokeColor         : 'rgba(0,255,0,0.8)',
-          pointColor          : '#0f0',
-          pointStrokeColor    : 'rgba(0,255,0,1)',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(0,255,0,1)',
-          data                : [280, 480, 400, 190, 86, 270, 90, 48, 30, 480, 400, 190, 86, 270, 90, 48, 30, 480, 400, 190, 86, 270, 90, 48, 30, 480, 400, 190, 86, 270, 90, 48, 30]
-        }
-      ]
-    }
-
-    var areaChartOptions = {
-      //Boolean - If we should show the scale at all
-      showScale               : true,
-      //Boolean - Whether grid lines are shown across the chart
-      scaleShowGridLines      : true,
-      //String - Colour of the grid lines
-      scaleGridLineColor      : 'rgba(0,0,0,.05)',
-      //Number - Width of the grid lines
-      scaleGridLineWidth      : 1,
-      //Boolean - Whether to show horizontal lines (except X axis)
-      scaleShowHorizontalLines: true,
-      //Boolean - Whether to show vertical lines (except Y axis)
-      scaleShowVerticalLines  : true,
-      //Boolean - Whether the line is curved between points
-      bezierCurve             : true,
-      //Number - Tension of the bezier curve between points
-      bezierCurveTension      : 0.3,
-      //Boolean - Whether to show a dot for each point
-      pointDot                : true,
-      //Number - Radius of each point dot in pixels
-      pointDotRadius          : 4,
-      //Number - Pixel width of point dot stroke
-      pointDotStrokeWidth     : 1,
-      //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-      pointHitDetectionRadius : 20,
-      //Boolean - Whether to show a stroke for datasets
-      datasetStroke           : true,
-      //Number - Pixel width of dataset stroke
-      datasetStrokeWidth      : 2,
-      //Boolean - Whether to fill the dataset with a color
-      datasetFill             : true,
-      //String - A legend template
-      legendTemplate          : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].lineColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
-      //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-      maintainAspectRatio     : true,
-      //Boolean - whether to make the chart responsive to window resizing
-      responsive              : true,
-      showTooltips            : true
-    }
-    //-------------
-    //- LINE CHART -
-    //--------------
-    var lineChartCanvas          = $('#lineChart').get(0).getContext('2d')
-    var lineChart                = new Chart(lineChartCanvas)
-    var lineChartOptions         = areaChartOptions
-    lineChartOptions.datasetFill = false
-    lineChart.Line(areaChartData, lineChartOptions)
-
-    //-------------
-    //- PIE CHART -
-    //-------------
-    // Get context with jQuery - using jQuery's .get() method.
-    var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
-    var pieChart       = new Chart(pieChartCanvas)
-    var PieData        = [
-      {
-        value    : 15,
-        color    : '#f56954',
-        highlight: '#f56954',
-        label    : 'Critical'
-      },
-      {
-        value    : 50,
-        color    : '#00a65a',
-        highlight: '#00a65a',
-        label    : 'Minor'
-      },
-      {
-        value    : 30,
-        color    : '#f39c12',
-        highlight: '#f39c12',
-        label    : 'Major'
-      }
-    ]
-    var pieOptions     = {
-      //Boolean - Whether we should show a stroke on each segment
-      segmentShowStroke    : true,
-      //String - The colour of each segment stroke
-      segmentStrokeColor   : '#fff',
-      //Number - The width of each segment stroke
-      segmentStrokeWidth   : 2,
-      //Number - The percentage of the chart that we cut out of the middle
-      percentageInnerCutout: 50, // This is 0 for Pie charts
-      //Number - Amount of animation steps
-      animationSteps       : 100,
-      //String - Animation easing effect
-      animationEasing      : 'easeOutBounce',
-      //Boolean - Whether we animate the rotation of the Doughnut
-      animateRotate        : true,
-      //Boolean - Whether we animate scaling the Doughnut from the centre
-      animateScale         : false,
-      //Boolean - whether to make the chart responsive to window resizing
-      responsive           : true,
-      // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-      maintainAspectRatio  : true,
-      //String - A legend template
-      legendTemplate       : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
-    }
-    //Create pie or douhnut chart
-    // You can switch between pie and douhnut using the method below.
-    pieChart.Doughnut(PieData, pieOptions)
-
-    })
-</script>     
-</body>
-</html>
+# -*- coding: utf-8 -*-
 
 
 
+import os
+import shutil
+import datetime
+from getJiraIssue import MyHTMLParser
+from LightMysql import LightMysql
+import pymysql
+import datetime
+from datetime import timedelta
+import re
+import sys
+from atomdatabase import DataToMysql
+import paramiko
+import threading
+import time
+from jira import JIRA
 
-2222222index.html
-<!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ATOM | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-        page. However, you can choose any other skin. Make sure you
-        apply the skin class to the body tag so the changes take effect. -->
-  <link rel="stylesheet" href="css/skin-blue.min.css">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <!-- Google Font -->
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-</head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to get the
-desired effect
-|---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+class Modelname:
+    def Modelname_handle(self,template):
+        rule = r'_(.*?)_'
+        slotList = re.findall(rule, template)
+        if not slotList:
+            return slotList
+        else:
+            s = "("+"'"+slotList[0]+"'"+","+")"
+            s1 = eval(s)
+            return s1
+        
+    def models(self,path_root,root_directory_name):
+        ite = file_handle()
+        path_root_next = os.path.join(path_root,root_directory_name)
+        item = ite.file2(path_root_next)
+        return item
+    def models1(self,path_root,root_directory_name):
+        ite = file_handle()
+        path_root_next = os.path.join(path_root,root_directory_name)
+        item = ite.file1(path_root_next)
+        return item
+    def model_member(self,item_1,item):
+        for model_member in item_1:
+            if model_member in item:
+                continue
+            else:
+                item.append(model_member)
+        return item
 
-  <!-- Main Header -->
-  <header class="main-header">
+class file_handle:
+    def file2(self,path_root):
+        item1=[]
+        #path_root = r'C:\\Users\\sunlanzi\\Desktop\\all\\daily'
+        file_list2 = os.listdir(path_root)
+        for i in file_list2:
+            path2 = os.path.join(path_root,i)
+            for dirpath, dirs, files in os.walk(path2):
+            ##print(files)
+                for name in files:
+                    if os.path.splitext(name)[1] == '.html' and name.find("_email_") >= 0:
+                    ##print(i)
+                        if i in item1:
+                            continue
+                        else:
+                            item1.append(i)
+                    else:
+                        continue
+        return item1
+    def file1(self,path_root):
+        item1=[]
+        #path_root = r'C:\\Users\\sunlanzi\\Desktop\\all\\daily'
+        file_list2 = os.listdir(path_root)
+        for i in file_list2:
+            #path2 = os.path.join(path_root,i)
+            for dirpath, dirs, files in os.walk(path_root):
+            ##print(files)
+                for name in files:
+                    if os.path.splitext(name)[1] == '.html' and name.find("_email_") >= 0:
 
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>ATOM</b></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>ATOM</b> - Dashboard</span>
-    </a>
+                        model_name = Modelname()
+                        i_i = model_name.Modelname_handle(i)
+                        for i_2 in i_i:
+                            if i_2 in item1:
+                                continue
+                            else:
+                                item1.append(i_2)
+                    else:
+                        continue
+        return item1
 
-    <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
-            <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
-              <li>
-                <!-- inner menu: contains the messages -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        <!-- User Image -->
-                        <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                </ul>
-                <!-- /.menu -->
-              </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
-            </ul>
-          </li>
-          <!-- /.messages-menu -->
 
-          <!-- Notifications Menu -->
-          <li class="dropdown notifications-menu">
-            <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- Inner Menu: contains the notifications -->
-                <ul class="menu">
-                  <li><!-- start notification -->
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <!-- end notification -->
-                </ul>
-              </li>
-              <li class="footer"><a href="#">View all</a></li>
-            </ul>
-          </li>
-          <!-- Tasks Menu -->
-          <li class="dropdown tasks-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
-              <li>
-                <!-- Inner menu: contains the tasks -->
-                <ul class="menu">
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <!-- Task title and progress text -->
-                      <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
-                      </h3>
-                      <!-- The progress bar -->
-                      <div class="progress xs">
-                        <!-- Change the css width attribute to simulate progress -->
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                </ul>
-              </li>
-              <li class="footer">
-                <a href="#">View all tasks</a>
-              </li>
-            </ul>
-          </li>
-          <!-- User Account Menu -->
-          <li class="dropdown user user-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <!-- The user image in the navbar-->
-              <img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">ARTIK SQA team</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- The user image in the menu -->
-              <li class="user-header">
-                <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+class days_count:
+    def week_get2(self,d):
+        dayscount = datetime.timedelta(days=d.isoweekday())
+        dayfrom = d - dayscount + datetime.timedelta(days=1)
+        dayto = d - dayscount + datetime.timedelta(days=7)
+        ##print (' ~~ '.join([str(dayfrom), str(dayto)]))
+        week7 = []
+        i = 0
+        while (i <= 6):
+            day_oneweek = str(i+1)
+            week7.append(str(dayfrom + datetime.timedelta(days=i)))
+            i += 1
+        return week7
+    def week_get1(self,d):
+        dayscount = datetime.timedelta(days=d.isoweekday())
+        dayto = d - dayscount
+        sixdays = datetime.timedelta(days=6)
+        dayfrom = dayto - sixdays
+        date_from = datetime.datetime(dayfrom.year, dayfrom.month, dayfrom.day, 0, 0, 0)
+        date_to = datetime.datetime(dayto.year, dayto.month, dayto.day, 23, 59, 59)
+        ##print ('---'.join([str(date_from), str(date_to)]))
+        week7 = []
+        i = 0
+        while (i <= 6):
+            week7.append(str(dayfrom + datetime.timedelta(days=i)))
+            i += 1
+        return week7
+    def two_or_one_week(self):
+        d = datetime.datetime.now()
+        d1 = days_count()
+        d1.week_get1(d)
+        w = []
+        w1 = []
+        for week1 in d1.week_get1(d):
+            w.append(week1)
+        for week2 in d1.week_get2(d):
+            w1.append(week2)
+            w.append(week2)
+        day_twoweeks = []
+        for i in w:
+            i1= i[2:10]
+            day_twoweeks.append(i1)
+        day_oneweek = []
+        for j in w1:
+            j1 = j[2:10]
+            day_oneweek.append(j1)
+        return day_twoweeks,day_oneweek
+class Html_content:
+    def content(self,fullname1):
+        global p
+        print("fullname1:",fullname1)
+        file_content=open(fullname1,"r").read()
+        parser = MyHTMLParser()
+        parser.feed(file_content)
+        if '.html' in fullname1:
+            #print(MyHTMLParser.items)
+            if 'PASS' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('PASS')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('PASS','P')
+                #item1.append(MyHTMLParser.items[p])
+            if 'FAIL' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('FAIL')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('FAIL','F')
+                #item1.append(MyHTMLParser.items[p])
+            if 'Conditional PASS' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('Conditional PASS')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('Conditional PASS','R')
+                #item1.append(MyHTMLParser.items[p])
+            if 'Exception Happens' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('Exception Happens')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('Exception Happens','E')
+            #print(MyHTMLParser.items[p])
+            return MyHTMLParser.items[p]
+        else:
+            return ''
+        MyHTMLParser.items = []
+    def content1(self,fullname3,i_is_html):
+        global p
+        #fullname3 =  os.path.join(path__1,i_is_html)                       
+        file_content=open(fullname3,"r").read()
+        parser = MyHTMLParser()
+        parser.feed(file_content)
+        m = Modelname()
+        modelname1 = m.Modelname_handle(i_is_html)
+        #if modelname1[0] in MyHTMLParser.items:
+        if 'PASS' in MyHTMLParser.items:
+            p = MyHTMLParser.items.index('PASS')
+            MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('PASS','P,0')
+        if 'FAIL' in MyHTMLParser.items:
+            p = MyHTMLParser.items.index('FAIL')
+            MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('FAIL','F,0')
+        if 'Conditional PASS' in MyHTMLParser.items:
+            p = MyHTMLParser.items.index('Conditional PASS')
+            MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('Conditional PASS','C,0')
+        if 'Exception Happens' in MyHTMLParser.items:
+            p = MyHTMLParser.items.index('Exception Happens')
+            MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('Exception Happens','E,0')
+        return MyHTMLParser.items[1],MyHTMLParser.items[p],modelname1[0]
+        MyHTMLParser.items = []
+    def content2(self,fullname3,i_is_html):
+        global p
+        #fullname3 =  os.path.join(path__1,i_is_html)                       
+        file_content=open(fullname3,"r").read()
+        parser = MyHTMLParser()
+        parser.feed(file_content)
+        m = Modelname()
+        modelname1 = m.Modelname_handle(i_is_html)
+        if modelname1[0] in MyHTMLParser.items:
+            if 'PASS' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('PASS')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('PASS','P')
+            if 'FAIL' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('FAIL')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('FAIL','F')
+            if 'Conditional PASS' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('Conditional PASS')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('Conditional PASS','C')
+            if 'Exception Happens' in MyHTMLParser.items:
+                p = MyHTMLParser.items.index('Exception Happens')
+                MyHTMLParser.items[p] = MyHTMLParser.items[p].replace('Exception Happens','E')
+        return MyHTMLParser.items[1],MyHTMLParser.items[p],modelname1[0]
+        MyHTMLParser.items = []
+class ST_table:
+    def __init__(self,st_chart,cat_daily_chart,cat_weekly_chart,cat_aging_chart,host,user,pswd,database):
+        self.st_chart = st_chart
+        self.cat_daily_chart = cat_daily_chart
+        self.cat_weekly_chart = cat_weekly_chart
+        self.cat_aging_chart = cat_aging_chart
+        self.db_st = DataToMysql(host,user,pswd,database)
+        self.st_m = Modelname()
+        self.st_h = Html_content()
+    def id_statistics(self,table_name):
+        num = self.db_st.select1(table_name)
+        for im in num:
+            print()
+            for tm in im:
+                print()
+        return tm
+    def not_daily_st(self,day_twoweeks,all_filename,path_root,):
+        column_name = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun','Mon1','Tue1','Wed1','Thu1','Fri1','Sat1','Sun1']
+        column_count = 0
+        #处理weekly数据需要
+        weekly_set = {}
+        
+        self.db_st.truncate(self.cat_daily_chart)  
+        self.db_st.truncate(self.cat_weekly_chart)  
+        self.db_st.truncate(self.cat_aging_chart) 
+        self.db_st.truncate(self.st_chart)   
+        #向st表中插入model名
+        for i_day3 in day_twoweeks:
+            item = []
+            #文件目录中有这一天
+            if i_day3 in all_filename:
+                #获取model名称
+                item_1 = self.st_m.models1(path_root,i_day3)
+                item = self.st_m.model_member(item_1,item)
+                #向表中插入model
+                self.db_st.model_column(self.st_chart,item)
+                self.db_st.model_column(self.cat_daily_chart,item)
+                self.db_st.model_column(self.cat_weekly_chart,item)
+                self.db_st.model_column(self.cat_aging_chart,item)
+            else:
+                continue
+        #st表模块
+        for i_day in day_twoweeks:
+            item = []
+            item_modelname = []
+            
+            #文件目录中有这一天
+            if i_day in all_filename:
+                print('1',i_day)
+                #获取model名称
+                item_1 = self.st_m.models1(path_root,i_day)
+                item = self.st_m.model_member(item_1,item)
+                #获取该天路径下的所有文件名称
+                path__1 = os.path.join(path_root,i_day)
+                filelist = os.listdir(path__1)
+                item1_st = []
+                item2_st = []
+                item3_st = []
+                item1_st_daily = {}
+                item2_st_weekly = {}
+                item2_st_weekly_1 = {}
+                item3_st_aging = {}
+                same_daily_modelname = []
+                same_weekly_modelname = []
+                same_aging_modelname = []
+               
+                #遍历html文件名称及内容
+                for i_is_html in filelist:
+                    print(i_is_html)
+                    date_weekly = ''
+                    date_aging = ''
+                    #判断符合要求的文件名称，并访问所需信息
+                    if '.html' in i_is_html:
+                        if 'unit' in i_is_html:
+                            continue
+                            
+                        else:
+                            model_name = Modelname()
+                            model = model_name.Modelname_handle(i_is_html)
+                            #查询weekly内容
+                            if 'weekly' in i_is_html:
+                                if model in same_weekly_modelname:
+                                    print("该model出现过")
+                                    fullname2 =  os.path.join(path__1,i_is_html)
+                                    a = self.st_h.content1(fullname2,i_is_html)
+                                    a2 = a[0]
+                                    date_weekly = a2[40:48]
+                                    if 'F' in a[1]:
+                                        item2_st_weekly[model] = a[1]
+                                else:
+                                    same_weekly_modelname.append(model)
+                                    fullname2 =  os.path.join(path__1,i_is_html)
+                                    a = self.st_h.content1(fullname2,i_is_html)
+                                    a2 = a[0]
+                                    date_weekly = a2[40:48]
+                                    item2_st_weekly[model] = a[1]                                      
+                                print("item2_st_weekly:",item2_st_weekly)
+                            else:
+                                if 'pilot' in i_is_html:
+                                    print("不管")    
+                                else:
+                                    if 'daily' in i_is_html:
+                                        
+                                        if model in same_daily_modelname:
+                                            print("该model出现过")
+                                            fullname2 =  os.path.join(path__1,i_is_html)
+                                            a = self.st_h.content1(fullname2,i_is_html)
+                                            a2 = a[0]
+                                            date_weekly1 = a2[10:18]
+                                            if 'F' in a[1]:
+                                                item1_st_daily[model] = a[1]
+                                        else:
+                                            same_daily_modelname.append(model)
+                                            fullname2 =  os.path.join(path__1,i_is_html)
+                                            a = self.st_h.content1(fullname2,i_is_html)
+                                            a2 = a[0]
+                                            date_weekly1 = a2[10:18]
+                                            item1_st_daily[model] = a[1] 
+                                            #modelname = a[2]
+                                            #item_modelname.append(modelname)                                     
+                                        print("item1_st_daily:",item1_st_daily)
+                                    else:
+                                        #处理aging内容
+                                        if 'aging' in i_is_html:
+                                            if model in same_aging_modelname:
+                                                print("该model出现过")
+                                                fullname2 =  os.path.join(path__1,i_is_html)
+                                                a = self.st_h.content1(fullname2,i_is_html)
+                                                a2 = a[0]
+                                                date_weekly1 = a2[40:48]
+                                                if 'F' in a[1]:
+                                                    item3_st_aging[model] = a[1]
+                                            else:
+                                                same_aging_modelname.append(model)
+                                                fullname2 =  os.path.join(path__1,i_is_html)
+                                                a = self.st_h.content1(fullname2,i_is_html)
+                                                a2 = a[0]
+                                                date_weekly1 = a2[10:18]
+                                                item3_st_aging[model] = a[1]
+                                            print("item3_st_aging:",item3_st_aging)
 
-                <p>
-                  ARTIK SQA team
-                  <small>Since 2016</small>
-                </p>
-              </li>
-              <!-- Menu Body -->
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
-                  </div>
-                </div>
-                <!-- /.row -->
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
 
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">Workgroup</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>CI overview</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>View by model</span>
-            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="A053S_overview.html">A053S</a></li>
-            <li><a href="#">A055S</a></li>
-            <li><a href="#">A305S</a></li>
-            <li><a href="#">A530S</a></li>
-            <li><a href="#">A710S</a></li>
-            <li><a href="#">Eagleye530</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
+                        item1_st = list(item1_st_daily.values())
+                        item2_st = list(item2_st_weekly.values())
+                        item3_st = list(item3_st_aging.values())
+                        #每次获取完网页所需内容之后需要清空 MyHTMLParser.items 中的内容
+                        MyHTMLParser.items = []
+                        #处理weekly，取平均值
+                        if not item2_st:
+                            pass
+                        else:
+                            #如果weekly是在当天执行当天结束
+                            if date_weekly == date_weekly1:
+                                pass
+                            else:
+                                if date_weekly == '':
+                                    print("没有weekly数据")
+                                else:
+                                    l = len(item2_st)
+                                    weekly_set[model,date_weekly,l] = item2_st[l-1]
+               
+                for col in item1_st_daily.keys():
+                    item_modelname.append(col[0])                                 
+                for col1 in item2_st_weekly.keys():
+                    if col1[0] in item_modelname:
+                        continue
+                    else:
+                        item_modelname.append(col1[0])
+                
+                print(item_modelname)
+                #insert daily,weekly,aging data directly
+                print("------------------------------------------")
+                #print("item1_st_daily:",item1_st_daily)
+                #print("item1_st:",item1_st)
+                for e,t in zip(item1_st,item_modelname):
+                    self.db_st.update1(self.cat_daily_chart,column_name[column_count],repr(e[0]),repr(t))
+                #print("item2_st_weekly:",item2_st_weekly)
+                if not item2_st_weekly:
+                    for e in weekly_set.keys():                
+                        if '/' in e[1]:
+                            today = '/'+i_day[3:5]+'/'+i_day[6:8]
+                        else:
+                            if '-' in e[1]:
+                                    today = '-'+i_day[3:5]+'-'+i_day[6:8]
+                        if today in e[1]:
+                            item2_st_weekly[e[0]] = weekly_set[e]
+                            for e in item2_st_weekly.keys():
+                                self.db_st.update1(self.cat_weekly_chart,column_name[column_count],repr(item2_st_weekly[e]),repr(e[0]))    
+                            
+                        else:
+                            item = ''
+                            for t in item_modelname:
+                                self.db_st.update1(self.cat_weekly_chart,column_name[column_count],repr(item),repr(t))    
+                    
+                else:
+                    #print('weekly_set:',weekly_set)
+                    for e in weekly_set.keys():
+                        if '/' in e[1]:
+                            today = '/'+i_day[3:5]+'/'+i_day[6:8]
+                        else:
+                            if '-' in e[1]:
+                                    today = '-'+i_day[3:5]+'-'+i_day[6:8]
+                        if today in e[1]:
+                            #print(e[0])
+                            item2_st_weekly_1[e[0]] = weekly_set[e]
+                        else:
+                            pass
+                    #print(item2_st_weekly_1)
+                    item2_st = list(item2_st_weekly_1.values())
+                    #print(item2_st)
+                    for e,t in zip(item2_st,item2_st_weekly_1.keys()):
+                        t1 = t[0]
+                        self.db_st.update1(self.cat_weekly_chart,column_name[column_count],repr(e[0]),repr(t1))
+                #print("item3_st_aging:",item3_st_aging)
+                if not item3_st_aging:
+                    item = ''
+                    for t in item_modelname:
+                        self.db_st.update1(self.cat_aging_chart,column_name[column_count],repr(item),repr(t))
+                else:
+                    for t in item3_st_aging.keys():
+                        t1 = item3_st_aging[t]
+                        self.db_st.update1(self.cat_aging_chart,column_name[column_count],repr(t1[0]),repr(t[0]))
+                #print("weekly_set:",weekly_set)
+                print("item1_st:",item1_st)
+                print(weekly_set)
+                for e in weekly_set.keys():
+                    i_day_part = i_day[6:8]
+                    if i_day[3:5] in e[1]:
+                        if i_day_part in e[1]:  
+                            print(i_day)
+                            print(e[0])
+                            print(item2_st_weekly[e[0]])
+                            print('!!!!')                 
+                            if item2_st_weekly[e[0]] == 'F,0':
+                                item1_st_daily[e[0]] ='F,0'
+                                print(item2_st_weekly[e[0]])
+                                print(item1_st_daily[e[0]])  
+                            else:
+                                continue
+                print("item1_st_daily:",item1_st_daily)
+                #print("item3_st_aging:",item3_st_aging)
+                for s in item3_st_aging.keys():
+                    if s in item1_st_daily.keys():
+                        str_item1_st_daily = item1_st_daily[s]
+                        str_item3_st_aging = item3_st_aging[s]
+                        item1_st_daily[s] = str_item1_st_daily[0:2]+str_item3_st_aging[0]
+                        print(item1_st_daily[s])
+                #print("item1_st_daily:",item1_st_daily)
+                item1_st = list(item1_st_daily.values())
+                #插入含有'daily'数据
+                '''
+                num = self.db_st.select1(st_chart)
+                for im in num:
+                    print()
+                    for tm in im:
+                        print()
+                if len(item1_st) <tm:
+                    l = tm - len(item1_st)
+                    for i in range(0,l):
+                        item1_st.append('0,0')
+                print("item1_st:",item1_st)
+                '''
+                print(item_modelname)
+                #print("#########################################")
+                
+                for t in item_modelname:
+                    print(t)
+                    t1 ="("+"'"+t+"'"+","+")"
+                    t2 = eval(t1)
+                    if t2 in item1_st_daily.keys():
+                        self.db_st.update1(self.st_chart,column_name[column_count],repr(item1_st_daily[t2]),repr(t))
+                    else:
+                        item = '0,0'
+                        self.db_st.update1(self.st_chart,column_name[column_count],repr(item),repr(t))
+                r = self.db_st.select5(column_name[column_count],self.st_chart)
+                #print("RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR")
+                print(r)
+                Num = 0
+                for rr in r:
+                    Num = Num +1
+                    if rr == (None,):
+                        rr = '0,0'
+                        self.db_st.update(self.st_chart,column_name[column_count],repr(rr),Num)
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        CI overview
-        <small><script type="text/javascript">var myDate = new Date();document.write(myDate.toLocaleString());</script></small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Refresh</a></li>
-        <!--<li class="active">Here</li>-->
-      </ol>
-    </section>
+                column_count=column_count+1
+                
+            #文件目录没有这一天
+            else:
+                item2_st_weekly_2 = {}
+                item2_st_1 = []
+                tm_daily = self.id_statistics(self.cat_daily_chart)
+                tm_aging = self.id_statistics(self.cat_aging_chart)
+                item = ''
+                for i in range(1,tm_daily+1):
+                    self.db_st.update(self.cat_daily_chart,column_name[column_count],repr(item),i)
+                for i in range(1,tm_aging+1):
+                    self.db_st.update(self.cat_aging_chart,column_name[column_count],repr(item),i)
+                item1_st_1 = {}
+                item1_st_1_weekly=[]
+                item1_st_1_copy = ['']
+                i_m1 = []
+                #目录中没有出现含有weekly的html文件
+                if not weekly_set:
+                    tm_weekly = self.id_statistics(self.cat_weekly_chart)
+                    for i in range(1,tm_weekly+1):
+                        self.db_st.update(self.cat_weekly_chart,column_name[column_count],repr(item),i)
+                    #判断周天是否已经插入值
+                    result = self.db_st.select(column_name[column_count],self.st_chart)
+                    result1 = list(result)
+                    tm= self.id_statistics(self.st_chart)                    
+                    for im1 in range(0,tm):
+                        i_m1.append((None,))
+                    #如果没有插入值指直接填空
+                    if result1 == i_m1:
+                        item2 = '0,0'
+                        for i in range(1,tm+1):
+                            self.db_st.update(self.st_chart,column_name[column_count],repr(item2),i)
+                    else:
+                        #否则跳出循环
+                        k = []
+                        for j in result1:
+                            #print(j)
+                            if j ==('P',):
+                                k.append(('P,0',))
+                            else:
+                                if j ==('F',):
+                                   k.append(('F,0',)) 
+                                else:
+                                    if j==('E',):
+                                       k.append(('E,0',))
+                                    else:
+                                       k.append(('0,0',))
+                        print(k)
+                        for t,i in zip(k,range(1,tm+1)):
+                            num = self.db_st.select1(self.st_chart)
+                            for im in num:
+                                print(im)
+                                for tm in im:
+                                    print(tm)
+                            for t1 in t:
+                                print(t1)
+                                self.db_st.update(self.st_chart,column_name[column_count],repr(t1),i)
+                    column_count=column_count+1
 
-    <!-- Main content -->
-    <section class="content container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <!-- TABLE: LATEST RESULTS -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Daily test</h3>
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div class="table-responsive">
-                <table class="table no-margin">
-                  <thead>
-                    <tr>
-                      <th>Model</th>
-                      <th>Cases(Total/Pass/Fail)</th>
-                      <th>Result</th>
-                      <th>Report time</th>
-                      <th>Main issue analysis</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A053S</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-success">Pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A055S</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-warning">Retest pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A305S</a></td>
-                      <td>100 / 50 / 50</td>
-                      <td><span class="label label-danger">Fail</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td>Env. issue</td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A530</a></td>
-                      <td></td>
-                      <td><span class="label label-info">Processing</span></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">Eagleyle530</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-warning">Retest pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A710</a></td>
-                      <td>100 / 90 / 10</td>
-                      <td><span class="label label-danger">Fail</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td>Release defect</td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A710S</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-success">Pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-              <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View Monthly Report &gt;</a>
-            </div>
-            <!-- /.box-footer -->
-          </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col (LEFT) -->
-        <div class="col-md-6">
-          <!-- TABLE: LATEST RESULTS -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Weekly test</h3>
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div class="table-responsive">
-                <table class="table no-margin">
-                  <thead>
-                    <tr>
-                      <th>Model</th>
-                      <th>Cases(Total/Pass/Fail)</th>
-                      <th>Result</th>
-                      <th>Report time</th>
-                      <th>Main issue analysis</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A053S</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-success">Pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A055S</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-warning">Retest pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A305S</a></td>
-                      <td>100 / 50 / 50</td>
-                      <td><span class="label label-danger">Fail</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td>Env. issue</td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A530</a></td>
-                      <td></td>
-                      <td><span class="label label-info">Processing</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">Eagleyle530</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-warning">Retest pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A710</a></td>
-                      <td>100 / 90 / 10</td>
-                      <td><span class="label label-danger">Fail</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td>Release defect</td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">A710S</a></td>
-                      <td>100 / 100 / 0</td>
-                      <td><span class="label label-success">Pass</span></td>
-                      <td>2018/5/16 11:26:35</td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-              <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
-            </div>
-            <!-- /.box-footer -->
-          </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col (RIGHT) -->
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <!-- LINE CHART -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Git submit history</h3>
-              <div class="box-tools pull-right"><button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button></div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="gitChart" style="height:250px"></canvas>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col (LEFT) -->
-        <div class="col-md-6">
-          <!-- LINE CHART -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Defect status</h3>
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="lineChart" style="height:250px"></canvas>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col (RIGHT) -->        
-      </div>
-      <!-- /.row -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+                else:
+                    print(weekly_set)
+                    print(item2_st_weekly_2)
+                    for e in weekly_set.keys():
+                        print(e[1])
+                        if '/' in e[1]:
+                            today = '/'+i_day[3:5]+'/'+i_day[6:8]
+                        else:
+                            if '-' in e[1]:
+                                today = '-'+i_day[3:5]+'-'+i_day[6:8]
+                        #i_day_part = i_day[6:8]
+                        if today in e[1]:
+                            item2_st_weekly_2[e[0]] = weekly_set[e]
+                            
+                        else:
+                            continue
+                    print(item2_st_weekly_2)
+                    item2_st_1 = list(item2_st_weekly_2.values())
+                    print(item2_st_1)
+                    if not item2_st_1:
+                        tm1= self.id_statistics(self.cat_weekly_chart)
+                        e = ''
+                        for t in range(1,tm1+1):
+                            self.db_st.update(self.cat_weekly_chart,column_name[column_count],repr(e),t)
+                    else:
+                        for e,t in zip(item2_st_1,item2_st_weekly_2.keys()):
+                            t1 = t[0]
+                            self.db_st.update1(self.cat_weekly_chart,column_name[column_count],repr(e[0]),repr(t1))
+                    tm2= self.id_statistics(self.st_chart)
+                    modelname = self.db_st.select3(self.st_chart)
+                    print("modelname:",modelname)
+                    for element,m_2 in zip(range(0,tm2),modelname):
+                        item1_st_1[m_2] = '0,0'
+                    print(item1_st_1)
+                    print("item2_st_weekly:",item2_st_weekly)
+                    print(weekly_set)
+                    for e in weekly_set.keys():
+                        print("i_day",i_day)
+                        i_day_part = i_day[3:8]
+                        print(i_day_part)
+                        print(e[1])
+                        if i_day_part in e[1]:
+                            print('i_day_part:',i_day_part)
+                            for e_1 in weekly_set.keys():
+                                if e[0] in e_1:
+                                    print(e[0])
+                                    print(weekly_set[e_1])
+                                    print(item1_st_1[e[0]])
+                                    item1_st_1[e[0]] = weekly_set[e_1]
+                                    print(item1_st_1[e[0]])
+                        else:
+                            continue
 
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="pull-right hidden-xs">v0.01_20180514</div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 - 2018 <a href="mailto:chao.wee@samsung.com">IoT SQA team</a>.</strong> All rights reserved.
-  </footer>
+                    print(item1_st_1)
+                    item1_st_1_weekly = list(item1_st_1.values())
+                            
+                if item1_st_1_weekly == item1_st_1_copy:
+                    result = self.db_st.select(column_name[column_count],self.st_chart)
+                    result1 = list(result)
+                    tm3= self.id_statistics(self.st_chart)
+                    for im1 in range(0,tm3):
+                        i_m1.append((None,))
+                    #如果没有插入值指直接填空
+                    if result1 == i_m1:
+                        item2 = '0,0'
+                        for i in range(1,12): 
+                            self.db_st.update(self.st_chart,column_name[column_count],repr(item2),i)
+                                
+                    else:
+                        print("该天已经有数据")
+                    column_count=column_count+1
+                    #print("没有这一天")
+                else:
+                    if not item1_st_1_weekly:
+                        continue
+                    else:
+                        for element1,i in zip(item1_st_1_weekly,range(1,12)):
+                            self.db_st.update(self.st_chart,column_name[column_count],repr(element1),i)
+                        column_count=column_count+1
+    def daily_st(self,item_1,path_root_next,day_twoweeks):
+        for i_st in item_1:
+            print("模块名称")
+            print(i_st)
+            path = os.path.join(path_root_next,i_st)
+            file_list=os.listdir(path) #进入指定的目录
+            item4_st = []
+            for k_st in day_twoweeks:
+                print(k_st)
+                if k_st in file_list:
+    
+                    print("文件夹中有这一天的数据")
+                    for filename in os.listdir(path):
+    
+                        if filename==k_st:
+                                #细化地址
+                            fullname = os.path.join(path,filename)
+                            print(fullname)
+                            #获取具体某一天目录下的文件列表
+                            file_list1 = os.listdir(fullname)
+                            print(file_list1)
+                            if not file_list1:
+                                #item1.append('')
+                                item4_st.append('')
+                            ##print(file_list1)
+                            else:
+                                s_st = 0
+                                item2 = []
+                                item1_st = []
+                                #根据文件名不同想不通的表中插入数据
+                                for k1_st in file_list1:                                
+                                    if 'unit' not in k1_st:
+                                        s_st = s_st+1
+                                        fullname1 = os.path.join(fullname,k1_st)  
+                                        #获取网页源码                         
+                                        file_content=open(fullname1,"r").read()
+                                        parser = MyHTMLParser()
+                                        parser.feed(file_content)
+                                        cn = Html_content()
+                                        print(item1_st)
+                                        item1_st.append(cn.content(fullname1))
+                                        print("hhahahahahahahahah",item1_st)
+                                        
+                                        if s_st>1:
+                                            if len(item1_st)>1:
+                                                for i_2_st in item1_st:
+                                                    if i_2_st == 'F':
+                                                        item1_st = ['F']
+                                                        item4_st.pop()
+                                                        item4_st.append(item1_st[0])
+                                        else:
+                                            item4_st.append(item1_st[0])
+                                        print(item4_st)
+                                    else:
+                                        continue
+                else:
+                    print("文件夹中没有这一天的数据")
+                    item4_st.append('')
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print(item4_st)
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Home tab content -->
-      <div class="tab-pane active" id="control-sidebar-home-tab">
-        <h3 class="control-sidebar-heading">Recent Activity</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:;">
-              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-                <p>Will be 23 on April 24th</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
+            result4 = self.db_st.select3(self.st_chart)
+            print(result4)
+            item5_st = []
+            i_st_1 = "("+"'"+i_st+"'"+","+")"
+            print(i_st_1)
+            i_st_2 = eval(i_st_1)
+            #for ii in result4:
+            if i_st_2 in result4:
+                print("该model已经有值")
+                r = self.db_st.select4(self.st_chart,repr(i_st))
+                print("SSSSSSSSSSSSSSS")
+                print(r)
+                b = list(r)
+                print(list(b[0]))
+                new = []
+                #ii = ['', 'F', '', '', '', '', '', '', '', '', '', '', '', '']
+                for i,i1 in zip(range(2,len(list(b[0]))),item4_st):
+                    c=list(b[0])
+                    #print(c[i])
+                    if i1 =='':
+                        new.append(c[i])
+                    else:
+                        if i1 == 'F':
+                            d = c[i]
+                            d = i1+d[1:3]
+                            new.append(d)
+                        else:
+                            if i1 =='C':
+                                d = c[i]
+                                d = i1+d[1:3]
+                                new.append(d) 
+                            else:
+                                new.append(c[i])
+                print(new)
+                if len(new) <15:
+                    count =  15 - len(new)
+                    for i_1_st in range(0,count):
+                        new.append('0,0')
+                print(new)
+                new[7]=''
+                print(new)
+                i1 = new[0]
+                i2 = new[1]
+                i3 = new[2]
+                i4 = new[3]
+                i5 = new[4]
+                i6 = new[5]
+                i7 = new[6]
+                i8 = new[7]
+                i9 = new[8]
+                i10 = new[9]
+                i11 = new[10]
+                i12 = new[11]
+                i13 = new[12]
+                i14 = new[13]
+                i15 = new[14]
+                self.db_st.update_not_daily(self.st_chart,repr(i1),repr(i2),repr(i3),repr(i4),repr(i5),repr(i6),repr(i7),repr(i8),repr(i9),repr(i10),repr(i11),repr(i12),repr(i13),repr(i14),repr(i15),repr(i_st))
+            else:
+                self.db_st.insert(self.st_chart,'model',repr(i_st))
+                for ii1 in item4_st:
+                    if ii1 == '':
+                        item5_st.append("0,0")
+                    else:
+                        item5_st.append(ii1+',0')
+                if len(item5_st) <14:
+                    count =  14 - len(item5_st)
+                    for i_1_st in range(0,count):
+                        item5_st.append('0,0')
+                print(item5_st)
+                item5_st.insert(7,'')
+                print(item5_st)
+                i1 = item5_st[0]
+                i2 = item5_st[1]
+                i3 = item5_st[2]
+                i4 = item5_st[3]
+                i5 = item5_st[4]
+                i6 = item5_st[5]
+                i7 = item5_st[6]
+                i8 = item5_st[7]
+                i9 = item5_st[8]
+                i10 = item5_st[9]
+                i11 = item5_st[10]
+                i12 = item5_st[11]
+                i13 = item5_st[12]
+                i14 = item5_st[13]
+                i15 = item5_st[14]
+                self.db_st.update_not_daily(self.st_chart,repr(i1),repr(i2),repr(i3),repr(i4),repr(i5),repr(i6),repr(i7),repr(i8),repr(i9),repr(i10),repr(i11),repr(i12),repr(i13),repr(i14),repr(i15),repr(i_st))
+            result_st = self.db_st.select4(self.st_chart,repr(i_st))
+            print(result_st)
+            result_st1 = result_st[0]
+            result_st2 = list(result_st1)
+            print(result_st2)
+            n = 0
+            for r in result_st2:
+                if r =='0,0':
+                    n = n+1
+                else:
+                    continue
+            print(n)
+            if n == 14:
+                self.db_st.delete(self.st_chart,repr(i_st))
+            print("?????????????????")
+        #result_st = self.db_st.select4(st_chart,repr(i_st))
 
-        <h3 class="control-sidebar-heading">Tasks Progress</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:;">
-              <h4 class="control-sidebar-subheading">
-                Custom Template Design
-                <span class="pull-right-container">
-                  <span class="label label-danger pull-right">70%</span>
-                </span>
-              </h4>
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-      </div>
-      <!-- /.tab-pane -->
-      <!-- Stats tab content -->
-      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-      <!-- /.tab-pane -->
-      <!-- Settings tab content -->
-      <div class="tab-pane" id="control-sidebar-settings-tab">
-        <form method="post">
-          <h3 class="control-sidebar-heading">General Settings</h3>
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Report panel usage
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-            <p>
-              Some information about this general settings option
-            </p>
-          </div>
-          <!-- /.form-group -->
-        </form>
-      </div>
-      <!-- /.tab-pane -->
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-  immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
+            #result3 = self.db_st.select4(st_chart,i_st)
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    #def average_value(self,table_name,i_st,item4_st):
+        
+class UT_table(object):
+    def __init__(self, ut_chart, cat_ut_chart,host,user,pswd,database):
+        self.ut_chart = ut_chart
+        self.cat_ut_chart = cat_ut_chart
+        self.db_ut   = DataToMysql(host,user,pswd,database)
+        self.ut_m = Modelname()
+        self.ut_h = Html_content()
 
-<!-- REQUIRED JS SCRIPTS -->
-<!-- jQuery 3 -->
-<script src="js/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="js/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="js/adminlte.min.js"></script>
-<script src="js/Chart.js"></script>
+    def id_statistics_1(self,table_name):
+        num = self.db_ut .select1(table_name) 
+        for im in num:
+            print()
+            for tm in im:
+                print()
+        return tm
+    def not_daily_ut(self,day_oneweek,all_filename,path_root):
+        self.db_ut .truncate(self.ut_chart)
+        weekly_set = {}  
+        column_name_ = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+        column_count_ = 0
+        print("diyi")
+        for i_day3 in day_oneweek:
+            item = []
+            print(i_day3)
+            print("1")
+            #文件目录中有这一天
+            if i_day3 in all_filename:
+                #获取model名称
+                print("2")
+                item_1 = self.ut_m.models1(path_root,i_day3)
+                item = self.ut_m.model_member(item_1,item)
+                #向表中插入model
+                print("3")
+                self.db_ut .model_column(self.ut_chart,item)
+            else:
+                continue
+        for i_day1 in day_oneweek:
+            item1_unit = []
+            item = []
+            item_modelname = []
+            #文件目录中有这一天
+            if i_day1 in all_filename:
+                print(i_day1)
+                #获取model名称
+                
+                item_1 = self.ut_m.models1(path_root,i_day1)
+                item = self.ut_m.model_member(item_1,item)
+                print(item)
+                #向表中插入model
+                self.db_ut .model_column(self.ut_chart,item)
+                #获取该天路径下的所有文件名称
+                path__1 = os.path.join(path_root,i_day1)
+                filelist = os.listdir(path__1)
+                item1_unit = []
+                item2_unit = []
+                date_weekly_st1 = []
+                item1_ut_daily = {}
+                item2_ut_weekly = {}
+                item3_ut_aging = {}
+                same_daily_modelname = []
+                same_weekly_modelname = []
+                same_aging_modelname = []
+                #遍历文件名称集合
+                for i_is_html in filelist:
+                    
+                    date_weekly_ = ''
+                    #判断符合要求的文件名称
+                    if '.html' in i_is_html:
+                        ##print("是html文件")
+                        if 'unit' in i_is_html:
+                            print(i_is_html)
+                            model_name = Modelname()
+                            model = model_name.Modelname_handle(i_is_html)
+                            ##print("需要插入到ut表中")
+                            if 'weekly' in i_is_html:
+                                if model in same_weekly_modelname:
+                                    print("该model出现过")
+                                    fullname2 =  os.path.join(path__1,i_is_html)
+                                    a = self.ut_h.content2(fullname2,i_is_html)
+                                    a2 = a[0]
+                                    date_weekly = a2[40:48]
+                                    if 'F' in a[1]:
+                                        item2_ut_weekly[model] = a[1]
+                                else:
+                                    same_weekly_modelname.append(model)
+                                    fullname2 =  os.path.join(path__1,i_is_html)
+                                    a = self.ut_h.content2(fullname2,i_is_html)
+                                    a2 = a[0]
+                                    date_weekly = a2[40:48]
+                                    item2_ut_weekly[model] = a[1]                                      
+                                print("3",item2_ut_weekly)
+                                #fullname3 =  os.path.join(path__1,i_is_html)
+                                #a = h.content2(fullname3,i_is_html)
+                                #a1 = a[0]
+                                #date_weekly = a1[40:48]
+                                #item2_unit.append(a[1])                        
+                            else:
+                                if 'pilot' in i_is_html:
+                                    print("不管")
+                                else:
+                                    if 'aging' in i_is_html:
+                                        if model in same_aging_modelname:
+                                            print("该model出现过")
+                                            fullname2 =  os.path.join(path__1,i_is_html)
+                                            a = self.ut_h.content2(fullname2,i_is_html)
+                                            a2 = a[0]
+                                            #date_weekly1 = a2[40:48]
+                                            if 'F' in a[1]:
+                                                item3_ut_aging[model] = a[1]
+                                        else:
+                                            same_aging_modelname.append(model)
+                                            fullname2 =  os.path.join(path__1,i_is_html)
+                                            a = self.ut_h.content2(fullname2,i_is_html)
+                                            a2 = a[0]
+                                            #date_weekly1 = a2[10:18]
+                                            item3_ut_aging[model] = a[1]
+                                    else:
+                                        if 'daily' in i_is_html:
+                                            if model in same_daily_modelname:
+                                                print("该model出现过")
+                                                fullname2 =  os.path.join(path__1,i_is_html)
+                                                a = self.ut_h.content2(fullname2,i_is_html)
+                                                a2 = a[0]
+                                                date_weekly1 = a2[10:18]
+                                                if 'F' in a[1]:
+                                                    item1_ut_daily[model] = a[1]
+                                            else:
+                                                same_daily_modelname.append(model)
+                                                fullname2 =  os.path.join(path__1,i_is_html)
+                                                a = self.ut_h.content2(fullname2,i_is_html)
+                                                a2 = a[0]
+                                                date_weekly1 = a2[10:18]
+                                                item1_ut_daily[model] = a[1]
+                                                #print(a[2]) 
+                                                #modelname = a[2]
+                                                #item_modelname.append(modelname)                                     
+                                        print("4",item1_ut_daily)
+                                        #fullname3 =  os.path.join(path__1,i_is_html)
+                                        #a = h.content2(fullname3,i_is_html)
+                                        #a1 = a[0]
+                                        #date_weekly_1 = a1[10:18]
+                                        #item1_unit.append(a[1])
+                                        
+                            item1_unit = list(item1_ut_daily.values())
+                            item2_unit = list(item2_ut_weekly.values()) 
+                            #每次获取完网页所需内容之后需要清空 MyHTMLParser.items 中的内容
+                            MyHTMLParser.items = []
+                            #处理weekly，取平均值
+                            if not item2_unit:
+                                pass
+                            else:
+                                #如果weekly是在当天执行当天结束
+                                if date_weekly == date_weekly1:
+                                    pass
+                                else:
+                                    if date_weekly == '':
+                                        print("没有weekly数据")
+                                    else:
+                                        l = len(item2_unit)
+                                        weekly_set[model,date_weekly,l] = item2_unit[l-1]                                      
+                            #if date_weekly_ == date_weekly_1:
+                            #    if item2_unit[-1] =='F':
+                            #        item1_unit[-1] = item2_unit[-1]
+                            #else:
+                            #    if date_weekly_ == '':
+                            #        print("没有weekly数据")
+                            #    else:
+                            #        
+                            #        l = len(item2_unit)
+                            #        weekly_set[date_weekly,l] = item2_unit[l-1]
+                        else:
+                            #item1_unit.append('')
+                            pass
+                            
+                            
+    
+                #插入含有'weekly'的数据
+                for e in weekly_set.keys():
+                    #e1 = str(e)
+                    #print("i_day",i_day)
+                    i_day_part = i_day1[6:8]
+                    #print(i_day_part)
+                    #print(e[1])
+                    if i_day_part in e[1]:
+                        #print(e[0])
+                        if item2_ut_weekly[e[0]] == 'F':
+                            item1_ut_daily[e[0]] ='F'
+                        else:
+                            pass
+                print("item1_ut_daily:",item1_ut_daily)
+                print("item2_ut_weekly:",item2_ut_weekly)
+                for s in item3_ut_aging.keys():
+                    if s in item1_ut_daily.keys():
+                        str_item1_ut_daily = item1_ut_daily[s]
+                        str_item3_ut_aging = item3_ut_aging[s]
+                        item1_ut_daily[s] = str_item1_ut_daily[0:2]+str_item3_ut_aging[0]
+                        print(item1_st_daily[s])
+                print("item1_ut_daily:",item1_ut_daily)
+                item1_unit = list(item1_ut_daily.values())
+                print(item1_unit)
+                for col in item1_ut_daily.keys():
+                    item_modelname.append(col[0])
+                print(item_modelname)
+                #result2 = db.select(column_name_[column_count_],ut_chart)
+                #print(result2)
+                for e,t in zip(item1_unit,item_modelname):
+                    self.db_ut .update1(self.ut_chart,column_name_[column_count_],repr(e),repr(t))
+                column_count_=column_count_+1         
+            
+            #文件目录没有这一天
+            else:
+                item1_unit_1 = []
+                item1_unit_1_copy = ['']
+                print(weekly_set)
+                if not weekly_set:
+                    result = self.db_ut .select(column_name_[column_count_],self.ut_chart)
+                    print(result)
+                    if not result:
+                        item2 = ''
+                        tm= self.id_statistics_1(self.ut_chart)
+                        for i in range(1,tm+1):
+                            self.db_ut .update(self.ut_chart,column_name_[column_count_],repr(item2),i)
+                            
+                    else:
+                        print("该天已经有数据")
+                    column_count_=column_count_+1
+                else:
+                    tm1= self.id_statistics_1(self.ut_chart)
+                    for element in range(0,tm1):
+                        item1_unit_1.append('')
+                    for e in weekly_set.keys():
+                        e1 = str(e)
+                        if i_day1 in e1:
+                            number = int(e1[13])
+                            value = weekly_set[i_day1,number]
+                            if value == 'F':
+                                item1_unit_1[number-1] = value
+                            else:
+                                continue
+                if item1_unit_1 == item1_unit_1_copy:
+                    result = self.db_ut .select(column_name_[column_count_],self.ut_chart)
+                    if not result:
+                        item2 = ''
+                        tm2= self.id_statistics_1(self.ut_chart)
+                        for i in range(1,tm2+1): 
+                            self.db_ut .update(self.ut_chart,column_name_[column_count_],repr(item2),i)   
+                    else:
+                        print("该天已经有数据")
+                    column_count_=column_count_+1
+                    #print("没有这一天")
+                else:
+                    if not item1_unit_1:
+                        continue
+                    else:
+                        tm3= self.id_statistics_1(self.ut_chart)
+                        for element1,i in zip(item1_unit_1,range(1,tm3+1)):
+                            self.db_ut .update(self.ut_chart,column_name_[column_count_],repr(element1),i)
+                        column_count_=column_count_+1
+        
+    def daily_ut_twoweeks(self,day_twoweeks,all_filename,path_root):
+        self.db_ut .truncate(self.cat_ut_chart)
+        column_name = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun','Mon1','Tue1','Wed1','Thu1','Fri1','Sat1','Sun1']
+        column_count = 0
+        #向st表中插入model名
+        for i_day3 in day_twoweeks:
+            item = []
+            #文件目录中有这一天
+            if i_day3 in all_filename:
+                #获取model名称
+                item_1 = self.ut_m.models1(path_root,i_day3)
+                item = self.ut_m.model_member(item_1,item)
+                #向表中插入model
+                self.db_ut .model_column(self.cat_ut_chart,item)
+            else:
+                continue
+        #st表模块
+        for i_day in day_twoweeks:
+            item = []
+            item_modelname = []
+            
+            #文件目录中有这一天
+            if i_day in all_filename:
+                print('1',i_day)
+                #获取model名称
+                item_1 = self.ut_m.models1(path_root,i_day)
+                item = self.ut_m.model_member(item_1,item)
+                #获取该天路径下的所有文件名称
+                path__1 = os.path.join(path_root,i_day)
+                filelist = os.listdir(path__1)
+                item1_ut = []
+                item1_st_daily = {}
+                same_daily_modelname = []
+               
+                #遍历html文件名称及内容
+                for i_is_html in filelist:
+                    print(i_is_html)
+                    #判断符合要求的文件名称，并访问所需信息
+                    if '.html' in i_is_html:
+                        if 'unit' in i_is_html:
+                            model_name = Modelname()
+                            model = model_name.Modelname_handle(i_is_html)
+                            #查询weekly内容
+                            if 'weekly' in i_is_html:
+                                pass
+                            else:
+                                if 'pilot' in i_is_html:
+                                    print("不管")    
+                                else:
+                                    if 'daily' in i_is_html:
+                                        
+                                        if model in same_daily_modelname:
+                                            print("该model出现过")
+                                            fullname2 =  os.path.join(path__1,i_is_html)
+                                            a = self.ut_h.content1(fullname2,i_is_html)
+                                            a2 = a[0]
+                                            date_weekly1 = a2[10:18]
+                                            if 'F' in a[1]:
+                                                item1_st_daily[model] = a[1]
+                                        else:
+                                            same_daily_modelname.append(model)
+                                            fullname2 =  os.path.join(path__1,i_is_html)
+                                            a = self.ut_h.content1(fullname2,i_is_html)
+                                            a2 = a[0]
+                                            date_weekly1 = a2[10:18]
+                                            item1_st_daily[model] = a[1]                              
+                                        print("item1_st_daily:",item1_st_daily)
+                                    else:
+                                        #处理aging内容
+                                        if 'aging' in i_is_html:
+                                            pass
 
-<script>
-  $(function () {
-    var areaChartData = {
-      //labels  : ['2018/5/13', '2018/5/12', '2018/5/11', '2018/5/10', '2018/5/9', '2018/5/8', '2018/5/7', '2018/5/6', '2018/5/5', '2018/5/4', '2018/5/3', '2018/5/2', '2018/5/1'],
-      labels  : ['A058S', 'A055S', 'A305S', 'A530', 'A530S', 'A530S 1G', 'Eagleyle530', 'A710', 'A710S'],
-      datasets: [
-        {
-          label               : 'Critical',
-          fillColor           : 'rgba(255, 0, 0, 1)',
-          strokeColor         : 'rgba(255, 0, 0, 1)',
-          pointColor          : 'rgba(255, 0, 0, 1)',
-          pointStrokeColor    : '#c1c7d1',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(255, 0, 0, 1)',
-          data                : [65, 59, 80, 81, 56, 55, 40, 59, 80]
-        },
-        {
-          label               : 'Major',
-          fillColor           : 'rgba(255, 102, 0, 1)',
-          strokeColor         : 'rgba(255, 102, 0, 1)',
-          pointColor          : 'rgba(255, 102, 0, 1)',
-          pointStrokeColor    : '#ff6600',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(255, 102, 0, 1)',
-          data                : [20, 80, 200, 40, 80, 33, 20, 88, 40]
-        },
-        {
-          label               : 'Minor',
-          fillColor           : 'rgba(60,141,188,0.9)',
-          strokeColor         : 'rgba(60,141,188,0.8)',
-          pointColor          : '#3b8bba',
-          pointStrokeColor    : 'rgba(60,141,188,1)',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(60,141,188,1)',
-          data                : [280, 480, 400, 190, 86, 270, 90, 48, 30]
-        }
-      ]
-    }
+                            
+                        else:
+                            pass
 
-    var areaChartOptions = {
-      //Boolean - If we should show the scale at all
-      showScale               : true,
-      //Boolean - Whether grid lines are shown across the chart
-      scaleShowGridLines      : true,
-      //String - Colour of the grid lines
-      scaleGridLineColor      : 'rgba(0,0,0,.05)',
-      //Number - Width of the grid lines
-      scaleGridLineWidth      : 1,
-      //Boolean - Whether to show horizontal lines (except X axis)
-      scaleShowHorizontalLines: true,
-      //Boolean - Whether to show vertical lines (except Y axis)
-      scaleShowVerticalLines  : true,
-      //Boolean - Whether the line is curved between points
-      bezierCurve             : true,
-      //Number - Tension of the bezier curve between points
-      bezierCurveTension      : 0.3,
-      //Boolean - Whether to show a dot for each point
-      pointDot                : true,
-      //Number - Radius of each point dot in pixels
-      pointDotRadius          : 4,
-      //Number - Pixel width of point dot stroke
-      pointDotStrokeWidth     : 1,
-      //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-      pointHitDetectionRadius : 20,
-      //Boolean - Whether to show a stroke for datasets
-      datasetStroke           : true,
-      //Number - Pixel width of dataset stroke
-      datasetStrokeWidth      : 2,
-      //Boolean - Whether to fill the dataset with a color
-      datasetFill             : true,
-      //String - A legend template
-      legendTemplate          : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].lineColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
-      //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-      maintainAspectRatio     : true,
-      //Boolean - whether to make the chart responsive to window resizing
-      responsive              : true,
-      showTooltips            : true
-    }
-    //-------------
-    //- LINE CHART -
-    //--------------
-    var lineChartCanvas          = $('#lineChart').get(0).getContext('2d')
-    var lineChart                = new Chart(lineChartCanvas)
-    var lineChartOptions         = areaChartOptions
-    lineChartOptions.datasetFill = false
-    lineChart.Line(areaChartData, lineChartOptions)
-  })
-</script>     
-</body>
-</html>
+                        item1_ut = list(item1_st_daily.values())
+                        #每次获取完网页所需内容之后需要清空 MyHTMLParser.items 中的内容
+                        MyHTMLParser.items = []
+                for col in item1_st_daily.keys():
+                    item_modelname.append(col[0])
+                for e,t in zip(item1_ut,item_modelname):
+                    self.db_ut .update1(self.cat_ut_chart,column_name[column_count],repr(e[0]),repr(t))
+               
+                column_count=column_count+1
+                
+            #文件目录没有这一天
+            else:
+                tm1 = self.id_statistics_1(self.cat_ut_chart)
+                item = ''
+                for i in range(1,tm1+1):
+                    self.db_ut.update(self.cat_ut_chart,column_name[column_count],repr(item),i)
+                column_count = column_count+1    
+    def daily_ut(self,item_1,path_root_next,day_oneweek):
+        for i_unit in item_1:
+            print("模块名称")
+            print(i_unit)
+    
+            path = os.path.join(path_root_next,i_unit)
+            #print(path)
+            file_list=os.listdir(path) #进入指定的目录
+            ##print(file_list)
+            item4_unit = []
+            for k_unit in day_oneweek:
+                print(k_unit)
+                if k_unit in file_list:
+    
+                    print("文件夹中有这一天的数据")
+                    for filename in os.listdir(path):
+    
+                        if filename==k_unit:
+                                #细化地址
+                            fullname = os.path.join(path,filename)
+                            ##print(fullname)
+                            #获取具体某一天目录下的文件列表
+                            file_list1 = os.listdir(fullname)
+    
+                            if not file_list1:
+                                #item1.append('')
+                                item4_unit.append('')
+                            ##print(file_list1)
+                            else:
+                                s_unit = 0
+                                item2 = []
+                                item1_unit = []
+                                #根据文件名不同想不通的表中插入数据
+                                for k1_unit in file_list1:                                
+                                    if 'unit' in k1_unit:
+                                        s_unit = s_unit+1
+                                        ##print("应该插入到ci_ut中")
+                                        fullname1 = os.path.join(fullname,k1_unit)  
+                                        #获取网页源码  
+                                        cn = Html_content()
+                                        item1_unit.append(cn.content(fullname1))
+                                        print(item1_unit)                                    
+                                        if s_unit>1:
+                                            if len(item1_unit)>1:
+                                                for i_2_unit in item1_unit:
+                                                    if i_2_unit == 'F':
+                                                        item1_unit = ['F']
+                                                        item4_unit.pop()
+                                                        item4_unit.append(item1_unit[0])
+                                        else:
+                                            item4_unit.append(item1_unit[0])
+                                    else:
+                                        continue
+                else:
+                    print("文件夹中没有这一天的数据")
+                    item4_unit.append('')
+            result4 = self.db_ut .select3(self.ut_chart)
+            print(result4)
+            item5_ut = []
+            i_ut_1 = "("+"'"+i_unit+"'"+","+")"
+            print(i_ut_1)
+            i_ut_2 = eval(i_ut_1)
+            #for ii in result4:
+            if i_ut_2 in result4:
+                print("该model已经有值")
+                r = self.db_ut .select4(self.ut_chart,repr(i_unit))
+                print("SSSSSSSSSSSSSSS")
+                print(r)
+                r1= []
+                b = list(r)
+                print(list(b[0]))
+                for i in list(b[0]):
+                    if i is None:
+                        r1.append("")
+                    else:
+                        r1.append(i)
+                print(r1)
+                new = []
+                #ii = ['', 'F', '', '', '', '', '', '', '', '', '', '', '', '']
+                for i,i1 in zip(range(2,len(list(r1))),item4_unit):
+                    c=list(r1)
+                    #print(c[i])
+                    if i1 =='':
+                        new.append(c[i])
+                    else:
+                        if i1 == 'F':
+                            d = c[i]
+                            d = i1+d[1:3]
+                            new.append(d)
+                        else:
+                            if i1 =='C':
+                                d = c[i]
+                                d = i1+d[1:3]
+                                new.append(d) 
+                            else:
+                                new.append(c[i])
+                print(new)
+                if len(new) <7:
+                    count =  7 - len(new)
+                    for i_1_ut in range(0,count):
+                        new.append('')
+                print(new)
+                i1 = new[0]
+                i2 = new[1]
+                i3 = new[2]
+                i4 = new[3]
+                i5 = new[4]
+                i6 = new[5]
+                i7 = new[6]
+                self.db_ut .update_daily(self.ut_chart,repr(i1),repr(i2),repr(i3),repr(i4),repr(i5),repr(i6),repr(i7),repr(i_unit))
+                #print("插入成功")
+            else:
+                self.db_ut .insert(self.ut_chart,'model',repr(i_unit))
+                for ii1 in item4_unit:
+                    if ii1 == '':
+                        item5_ut.append("")
+                    else:
+                        item5_ut.append(ii1)
+                if len(item5_ut) <7:
+                    count =  7 - len(item5_ut)
+                    for i_1_ut in range(0,count):
+                        item5_ut.append('')
+                print(item5_ut)
+                
+                i1 = item5_ut[0]
+                i2 = item5_ut[1]
+                i3 = item5_ut[2]
+                i4 = item5_ut[3]
+                i5 = item5_ut[4]
+                i6 = item5_ut[5]
+                i7 = item5_ut[6]
+                self.db_ut .update_daily(self.ut_chart,repr(i1),repr(i2),repr(i3),repr(i4),repr(i5),repr(i6),repr(i7),repr(i_unit))
+        tm_1= self.id_statistics_1(self.ut_chart) 
+        for i in range(1,tm_1+1):
+            r = self.db_ut .select6(self.ut_chart,i)
+            n = 0
+            r1 = r[0]
+            r2 = list(r1)
+            print(r2)
+            for iii in r2:
+                if iii == None:
+                    n = n+1
+                    print(r2,n)
+                    if n == 7:
+                        self.db_ut .delete1(self.ut_chart,i)
+                else:
+                    if iii == '':
+                        n = n +1
+                        print(r2,n)
+                        if n == 7:
+                            self.db_ut .delete1(self.ut_chart,i)
+                            
+        self.db_ut .alter(self.ut_chart)
+        
+
+class Copy_file:
+    def Host_environment(self,hostname,port,username,password,local_dir,remote_dir):
+        t=paramiko.Transport((hostname,port))
+        t.connect(username=username,password=password)
+        sftp = paramiko.SFTPClient.from_transport(t)
+        files_remote = sftp.listdir(remote_dir) #这里需要注意，列出远程文件必须使用sftp，而不能用os
+        
+        count = 0
+        for n in files_remote:
+            count = count + 1
+        
+        files_local =  os.listdir(local_dir)
+       
+        count1 = 0
+        for d_name in files_remote:
+            local1_dir = os.path.join(local_dir,d_name)+'/'
+            #判断该目录是否存在
+            result = os.path.exists(local1_dir)
+            if result == False:
+                
+                os.mkdir(local1_dir)
+            else:
+                #continue
+                pass
+            #目录结构必须为/home/sunlanzi/all2/类似才会进行操作
+            remote1_dir = os.path.join(remote_dir,d_name)+'/' 
+            
+            if '-' in d_name:
+                print(d_name)
+                if d_name in files_local:
+                    continue
+                else:
+                    files_remote1 = sftp.listdir(remote1_dir)
+                    for file in files_remote1:
+                        
+                        p = os.path.join(remote1_dir,file)
+                        print(p)
+                        result = os.path.isdir(p)
+                        print(result)
+                        try:
+                            if result == False:
+                                print(file)
+                                sftp.get(os.path.join(remote1_dir,file),os.path.join(local1_dir,file)) #注意，此处只能拷贝的是某个具体的文件，而不能是目录
+                        except:
+                            print("hahah")
+                
+            else:
+                if d_name == 'daily':
+                    files_remote2 = sftp.listdir(remote1_dir)
+                
+                    for file in files_remote2:
+                        remote2_dir = os.path.join(remote1_dir,file)+'/'
+                    
+                        if '.sh' in file:
+                            continue
+                        else:
+                            files_remote3 = sftp.listdir(os.path.join(remote1_dir,file))
+                            for i in files_remote3:
+                                count1 = count1+1
+                        
+                    
+                        local2_dir = os.path.join(local1_dir,file)+'/'
+                        files_local1 = os.listdir(local2_dir)
+                        print("@@",file)
+                        for item in files_remote3:
+                        
+                            if item in files_local1:
+                                continue
+                            else:
+                                if '18' in item:
+                                    local3_dir = os.path.join(local2_dir,item)+'/'
+                                    os.mkdir(local3_dir)
+                                    remote3_dir = os.path.join(remote2_dir,item)+'/'
+                                    print(remote3_dir)
+                                    files_remote4 = sftp.listdir(remote3_dir)
+                                    for file1 in files_remote4:
+                                        sftp.get(os.path.join(remote3_dir,file1),os.path.join(local3_dir,file1))
+                                else:
+                                    print("##",item)
+                                    print("软链接$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+                                    print(os.path.islink(os.path.join(remote2_dir,item)))
+                                    sftp.get(os.path.join(remote2_dir,item),os.path.join(local2_dir,item))
+        return count,count1   
+class Main_process:
+    def execute(self): 
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        '''
+        print(datetime.datetime.now())
+        hostname = '105.128.30.59'
+        username = 'root'
+        password = 'auto!@#'
+        port = 22
+        local_dir = r'/home/artik/software/dashboard/DataCollection/all2/'
+        
+        remote_dir = r'/var/www/artik-release/images/Fileshare/CI/'
+        c = Copy_file()
+        count=c.Host_environment(hostname,port,username,password,local_dir,remote_dir)
+        count1 = count[0]
+        count2 = count[1]
+        print(count1,count2)
+        '''
+         
+        #获取所有model名
+        root_directory_name = 'daily' 
+        m = Modelname()
+        item_1 = m.models(path_root,root_directory_name)
+        ##获取两个星期日期或者一个星期日期
+        Day = days_count()
+        Day1 = Day.two_or_one_week()
+        day_twoweeks = Day1[0]
+        #print(day_twoweeks)
+        day_oneweek = Day1[1]
+
+
+        path_root_next = os.path.join(path_root,root_directory_name)
+        #item1_unit = []
+        #item1_st = []
+        insert_data_st = ST_table('dashboard_ci_st_chart1','dashboard_cat_ci_daily_chart','dashboard_cat_ci_weekly_chart','dashboard_cat_ci_aging_chart',host,user,pswd,database)
+        insert_data_ut = UT_table('dashboard_ci_ut_chart1','dashboard_cat_ci_ut_chart',host,user,pswd,database)
+        #
+        insert_data_st.not_daily_st(day_twoweeks,all_filename,path_root)
+        insert_data_st.daily_st(item_1,path_root_next,day_twoweeks)
+       #
+        #
+        insert_data_ut.not_daily_ut(day_oneweek,all_filename,path_root)
+        insert_data_ut.daily_ut_twoweeks(day_twoweeks,all_filename,path_root)
+        insert_data_ut.daily_ut(item_1,path_root_next,day_oneweek)
+
+        
+        ji = JiraIssue(host,user,pswd,database,'dashboard_defact_statistics')
+        prjlist = ["ARTIK E2E", "ARTIK IoT", "ARTIK E2E IDE"]
+        ji.insert_issue("http://105.128.30.62:8080", "chao.wee", "13647408", prjlist)
+        
+        global timer
+        timer = threading.Timer(1.0, Process.execute)
+        timer.start()
+class JiraIssue(object):
+    def __init__(self,host,user,pswd,database,table_name3):
+        self.db_Jira = DataToMysql(host,user,pswd,database)
+        self.Jira_table = table_name3
+    #print issue summary
+    def get_issue(self, url, user, pswd, prjname):
+        issue_priority = {}
+        print(url,user,pswd)
+        jira = JIRA(url, basic_auth=(user, pswd))
+        issues = jira.search_issues('project = "'+prjname+'" and issuetype="Bug" and status!="Closed"', maxResults=0, fields='summary,priority,status')
+        for issue in issues:
+            if issue_priority.has_key(issue.fields.priority.name):
+                issue_priority[issue.fields.priority.name] = issue_priority[issue.fields.priority.name] + 1
+            else:   # add new 
+                issue_priority[issue.fields.priority.name] = 1
+        return issue_priority
+    def insert_issue(self,host,user,pswd,prjlist):
+        self.db_Jira.truncate(self.Jira_table)
+        for prj in prjlist:
+            issue_data = self.get_issue(host, user, pswd, prj)
+            keys = "project"
+            values = '"' + prj + '"'
+            for issue in issue_data:
+                keys = keys + "," + issue
+                values = values + "," + str(issue_data[issue])
+            result = self.db_Jira.insert(self.Jira_table,keys,values)
+        
+if __name__ == '__main__':
+    path_root = r'/home/artik/software/dashboard/DataCollection/all2/'
+    #path_root = r'C:\Users\sunlanzi\Desktop\all2-1'
+    all_filename = os.listdir(path_root)
+    
+
+    host = '109.105.120.34'
+    user = 'root'
+    pswd = 'auto!@#'
+    database = 'dashboard'
+    
+    Process = Main_process()
+    timer = threading.Timer(1.0, Process.execute)
+    timer.start()
