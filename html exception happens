@@ -1,0 +1,79 @@
+<html>
+        <head>
+                <style>
+                        table#t01 {font-family: arial, sans-serif;border: 1px solid #dddddd;}
+                        table, th, td {border-collapse: collapse;}
+                        table#t01 th {padding: 5px;text-align: left;border: 1px solid black;}
+                        table#t01 td {padding: 5px;text-align: left;border: 1px solid black;line-height:120%}
+                        table#t01 th {background-color: black;color: white;}
+                        table#t02 tr:nth-child(even) {background-color: #dddddd;}
+                        table#t02 {font-family: arial, sans-serif;border: 1px solid #dddddd;}
+                        table#t02 td {padding: 5px;text-align: left;border: 1px solid black;}
+						table#t03 {font-family: arial, sans-serif;border: 1px solid #dddddd;}
+						table#t03 th {padding: 5px;text-align: left;border: 1px solid black;}
+                        table#t03 td {padding: 10px;text-align: left;border: 1px solid black;line-height:120%}
+                        table#t03 th {background-color: black;color: white;}
+                </style>
+        </head>
+        <body>
+                <h1>E2E-SDK-CUNIT-CI</h1>
+                <table id="t02">
+                        <tr>
+                                <td>Date</td>
+                                <td>NA</td>
+                        </tr>
+                        <tr>
+                                <td>MODEL</td>
+                                <td>{MODEL}</td>
+                        </tr>
+						<tr>
+                                <td>Test Result (Total/Pass/Fail)</td>
+                                <td><font color=red><strong>Exception Happens</strong></font><br></td>
+                        </tr>
+                        <tr>
+                                <td>OS</td>
+                                <td>NA</td>
+                        </tr>
+                        <tr>
+                                <td>F/W Version</td>
+                                <td>NA</td>
+                        </tr>
+                        <tr>
+                                <td>CHANGE List</td>
+                                <td>NA</td>
+                        </tr>
+                </table>
+                <br>
+                <br>
+<table id="t03">
+<tr>
+        <th>Total Log URL</th>
+		<td>http://105.128.30.59:8080/Fileshare/SRCX/2018-09-12-00-30-02_20180912003002zlgx0avw2d97bb2ud9z08jfedx0jwq</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-09-12-00-30-02_20180912003002zlgx0avw2d97bb2ud9z08jfedx0jwq">URL Link</a></td>
+</tr>
+<tr>
+        <th>TestSuite</th>
+        <td colspan="2">{TestSuite}</td>
+</tr>
+<tr>
+        <th>TestCase</th>
+        <td colspan="2">Cannot catch testcase info, </td>
+</tr>
+<tr>
+        <th>KEY</th>
+        <td colspan="2">{KEY}</td>
+</tr>
+<tr>
+        <th>TESTER</th>
+        <td colspan="2">{TESTER}</td>
+</tr>
+</table>
+<br>
+<br>
+<table id="t01">
+</table>
+<br>
+
+        For more details, please check report: <a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-09-12-00-30-02_20180912003002zlgx0avw2d97bb2ud9z08jfedx0jwq/log.html">http://105.128.30.59:8080/Fileshare/SRCX/2018-09-12-00-30-02_20180912003002zlgx0avw2d97bb2ud9z08jfedx0jwq/log.html</a></body>
+</html>
+
