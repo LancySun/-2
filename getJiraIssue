@@ -1,0 +1,74 @@
+from jira import JIRA
+from LightMysql import LightMysql
+import HTMLParser
+import os
+import datetime
+
+class JiraIssue:
+    #print issue summary
+    def get_issue(self, url, user, pswd, prjname):
+        #issue_priority = {'project': prjname}
+        issue_priority = {}
+        jira = JIRA(url, basic_auth=(user, pswd))
+        issues = jira.search_issues('project = "'+prjname+'" and issuetype="Bug" and status!="Closed"', maxResults=0, fields='summary,priority,status')
+        for issue in issues:
+            if issue_priority.has_key(issue.fields.priority.name):
+                issue_priority[issue.fields.priority.name] = issue_priority[issue.fields.priority.name] + 1
+            else:   # add new 
+                issue_priority[issue.fields.priority.name] = 1
+        return issue_priority
+
+        
+class MyHTMLParser(HTMLParser.HTMLParser):
+    table_flag = False
+    td_flag = False    
+    items = []
+    #处理开始标签，比如<div>；这里的attrs获取到的是属性列表，属性以元组的方式展示
+    def handle_starttag(self, tag, attrs): 
+        if str(tag).startswith("table"):
+            for (attr_name, attr_value) in attrs:
+                if attr_name == "id" and attr_value == "t02":
+                    self.table_flag = True            
+        if str(tag).startswith("td"):
+            self.td_flag = True  
+    #处理结束标签,比如</div>
+    def handle_endtag(self, tag): 
+        if tag=="td":
+            self.td_flag = False
+        if tag=="table":
+            self.table_flag = False            
+    #处理数据，标签之间的文本
+    def handle_data(self, data): 
+        if self.table_flag is True:
+            if self.td_flag is True:
+                #if data.find("[START]") >= 0:
+                #    datas = data.replace("[START]", "").replace("[END]", "").split("~")
+                #    self.items.append(datas[0].strip())
+                #    self.items.append(datas[1].strip())                    
+                #else:
+                self.items.append(data.strip())
+                #print(self.items)
+                #print(self.items)
+
+            
+class AnalyzeCI:
+    def analyze_file(self, filepath):
+        print(filepath)
+        htmlFile = open(filepath,'r')#以只读方式打开文件
+        content = htmlFile.read()
+        parser = MyHTMLParser()
+        parser.items = []
+        parser.feed(content)
+        return parser.items
+
+        
+if __name__ == '__main__':
+    dbconfig = {'host':'109.105.114.130', 'port': 3306, 'user':'root', 'passwd':'root', 'db':'dashboard', 'charset':'utf8'}
+    db = LightMysql(dbconfig)
+
+
+    #table dashboard_ci_st_chart1
+    #db.dml("TRUNCATE table dashboard_ci_st_chart1")
+    sql = "insert into dashboard_ci_daily_chart1 (Mon) values (" + item + ") where model = 'ARTIK053'"
+            #print(sql)
+    db.dml(sql)
