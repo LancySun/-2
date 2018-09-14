@@ -7,4 +7,6 @@ all
 1.1 含有各个模块的名称的html文件，包括unit，sqa（daily，weekly，aging）
 
 2 、 daily
+2.1 二级目录用model名命名
+platform_unit_18-06-05_end_email_format.html
 }
