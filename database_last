@@ -1,0 +1,255 @@
+import pymysql
+import scrapy
+import json
+
+
+# 数据库连接
+db1 = pymysql.connect('localhost', 'root', 'wykl0920', 'test')
+cursor1 = db1.cursor()
+db2 = pymysql.connect('localhost','root','wykl0920','test1')
+cursor2 = db2.cursor()
+
+#第一步
+#首先根据ID判断是否需要全部进行拆分
+cursor1.execute("SELECT id FROM testsuite_execution ORDER BY id DESC LIMIT 1")
+id_total = cursor1.fetchall()
+#查询被插入表是否存在id这一列，存在说明已经进行插入过，不存在说明是空表
+cursor2.execute("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'test3'AND table_schema = 'test1' and COLUMN_NAME='id'")
+id_=cursor2.fetchall()
+if not id_:
+    print("数据表为空，直接进行插入拆分")
+    #遍历列名,插入列
+    cursor1.execute("select column_name from information_schema.columns where table_name = 'testsuite_execution'")
+    item=cursor1.fetchall()
+    for i1 in item:
+        cursor2.execute("select column_name from information_schema.columns where table_name = 'test3'")
+        item1=cursor2.fetchall()
+        if i1 in item1:
+            continue
+        else:
+            if i1==('id',):
+                cursor2.execute("ALTER table test3 add %s INT(11) primary key"%(i1))
+            else:
+                cursor2.execute("ALTER table test3 add %s TEXT(500)"%(i1))
+
+    # 定义查询语句
+    cursor1.execute('select id,executionname,user_id,alias_id,process,description,starttime,endtime,result,logpath,is_active,complete_percentage,schedule_id,testcases_pass_count,testcases_fail_count,status,testcases_seq from testsuite_execution')
+    data2 = cursor1.fetchall()
+    sql = 'insert into test3(id,executionname,user_id,alias_id,process,description,starttime,endtime,result,logpath,is_active,complete_percentage,schedule_id,testcases_pass_count,testcases_fail_count,status,testcases_seq) value(%s, %s, %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
+    cursor2.executemany(sql, data2)
+    print("原始表ssuccess")
+    db1.commit()
+    db2.commit()
+    #拆分message
+    cursor1.execute( "select message from testsuite_execution order by id")
+    data = cursor1.fetchall()
+    cursor1.execute("select id from testsuite_execution order by id")
+    ids = cursor1.fetchall()
+
+    for idx1 in range(len(data)):
+        ids2,=ids[idx1]
+        print(ids2)
+        if data[idx1]==(None,):
+            continue
+        else:
+            #' '.join用来去掉括号（方括号或者圆括号）
+            data2=' '.join(data[idx1])   
+            data3=json.loads(data2)
+            data4=eval("data3")
+            #插入列
+            for key in data4.keys():
+                cursor2.execute("select column_name from information_schema.columns where table_name = 'test3'")
+                item88=cursor2.fetchall()
+                item18=str(item88)
+                key1 = "'" + key + "'"
+                if key1 in item18:
+                    continue
+                else:
+                    cursor2.execute("ALTER table test3 add %s TEXT(500)"%(key))
+                    db2.commit()
+                    print("添加成功")
+            sql_key = ''  # 数据库行字段
+            sql_value = ''  # 数据库值
+            for key in data4.keys():    
+                sql_value = (sql_value + '"' + pymysql.escape_string(str(data4[key])) + '"' + ';')
+                sql_key = sql_key + key + ','
+                #插入行
+            sql_key1=sql_key.split(",")
+            sql_value1=sql_value.replace('"','')
+            sql_value3=sql_value1.replace("'",'')
+            sql_value4=sql_value3.replace("\\", '')
+            sql_value5=sql_value4.split(";")
+            for i,j in zip(sql_key1,sql_value5):
+                if not i:
+                    continue
+                else:
+                    cursor2.execute("update test3 set %s = %s where id = %s"% ( i, repr(j),ids2))
+                    db2.commit()  # 提交当前事务
+                    print("插值成功")
+            print("插值结束")
+    for idx in range(len(data)):
+        ids1,=ids[idx]
+        if data[idx]==(None,):
+            continue
+        else:
+            #' '.join用来去掉括号（方括号或者圆括号）
+            data22=' '.join(data[idx])   
+            data33=json.loads(data22)
+            data44=eval("data33")
+            #插入列
+            for key in data44.keys():
+           
+                if key=='additionalparams':
+                    s=data44[key]
+                    print(s)
+                    if not s:
+                        continue
+                    else:
+                        s1=s.replace('$','')
+                        s2=s1.replace('{','')
+                        s3=s2.replace('}','')
+                        #通过逗号分隔将字符串转变为列表
+                        s5=s3.split(",")
+                        #删除该列表中的第一个值
+                        del s5[0]
+                        print(s5)
+                        #遍历列表
+                        for i2 in s5:            
+                            print(i2)
+                            i1=i2.split('=')
+                            print(i1)                    
+                            columnname=str(i1[0])
+                            value=str(i1[1])
+                            print(columnname)
+                            print(value)
+                            #插入列
+                            cursor2.execute("select column_name from information_schema.columns where table_name = 'test3'")
+                            item=cursor2.fetchall()
+                            item1=str(item)
+                            if columnname in item1:
+                                print("列已经存在")
+                            else: 
+                                cursor2.execute(("ALTER table test3 add %s TEXT(500)"%(columnname)))                        
+                                db2.commit()
+                            cursor2.execute("update test3 set %s = %s where id =%s"%(columnname,repr(value),ids1))
+                            db2.commit()
+                            print("插入成功")
+                else:
+                    continue
+else:
+    #id这一列存在因此将新旧两张表的id进行对比
+    cursor2.execute("SELECT id FROM test3")
+    id_total1 = cursor2.fetchall()
+    l = len(id_total1) 
+    id_total2 = id_total1[l-1]
+    if id_total==id_total2:
+        print("没有新的数据")
+    else:
+        print("需要拆分数据")
+        cursor2.execute("SELECT id FROM test3 ORDER BY id DESC LIMIT 1")
+        id_total = cursor2.fetchall()
+        d=id_total[0]
+        cursor1.execute('select id,executionname,user_id,alias_id,process,description,starttime,endtime,result,logpath,is_active,complete_percentage,schedule_id,testcases_pass_count,testcases_fail_count,status,testcases_seq from testsuite_execution where id >%s'%(d[0]))
+        data2 = cursor1.fetchall()
+        print(data2)
+        sql = 'insert into test3(id,executionname,user_id,alias_id,process,description,starttime,endtime,result,logpath,is_active,complete_percentage,schedule_id,testcases_pass_count,testcases_fail_count,status,testcases_seq) value(%s, %s, %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
+        cursor2.executemany(sql, data2)
+        print("原始表中多余的值插完ssuccess")
+        db1.commit()
+        db2.commit()
+        cursor1.execute("select id from testsuite_execution where id>%s order by id"%(d[0]))
+        ids = cursor1.fetchall()
+        print(ids)
+        cursor1.execute("select message from testsuite_execution where id>%s order by id"%(d[0]))
+        data = cursor1.fetchall()
+        print(data)
+        for idx1 in range(len(data)):
+            ids2,=ids[idx1]
+            print(ids2)
+            if data[idx1]==(None,):
+                continue
+            else:
+                #' '.join用来去掉括号（方括号或者圆括号）
+                data2=' '.join(data[idx1])   
+                data3=json.loads(data2)
+                data4=eval("data3")
+                #插入列
+                for key in data4.keys():
+                    cursor2.execute("select column_name from information_schema.columns where table_name = 'test3'")
+                    item88=cursor2.fetchall()
+                    item18=str(item88)
+                    key1 = "'" + key + "'"
+                    if key1 in item18:
+                        continue
+                    else:
+                        cursor2.execute("ALTER table test3 add %s TEXT(500)"%(key))
+                        db2.commit()
+                        print("添加成功")
+                sql_key = ''  # 数据库行字段
+                sql_value = ''  # 数据库值
+                for key in data4.keys():    
+                    sql_value = (sql_value + '"' + pymysql.escape_string(str(data4[key])) + '"' + ';')
+                    sql_key = sql_key + key + ','
+                #插入行
+                sql_key1=sql_key.split(",")
+                sql_value1=sql_value.replace('"','')
+                sql_value3=sql_value1.replace("'",'')
+                sql_value4=sql_value3.replace("\\", '')
+                sql_value5=sql_value4.split(";")
+                for i,j in zip(sql_key1,sql_value5):
+                    if not i:
+                        continue
+                    else:
+                        cursor2.execute("update test3 set %s = %s where id = %s"% ( i, repr(j),ids2))
+                        db2.commit()  # 提交当前事务
+                        #print("插值成功")
+                print("插值结束")
+        for idx in range(len(data)):
+            ids1,=ids[idx]
+            if data[idx]==(None,):
+                continue
+            else:
+                #' '.join用来去掉括号（方括号或者圆括号）
+                data22=' '.join(data[idx])   
+                data33=json.loads(data22)
+                data44=eval("data33")
+                #插入列
+                for key in data44.keys():
+           
+                    if key=='additionalparams':
+                        s=data44[key]
+                        print(s)
+                        if not s:
+                            continue
+                        else:
+                            s1=s.replace('$','')
+                            s2=s1.replace('{','')
+                            s3=s2.replace('}','')
+                            #通过逗号分隔将字符串转变为列表
+                            s5=s3.split(",")
+                            #删除该列表中的第一个值
+                            del s5[0]
+                            print(s5)
+                                #遍历列表
+                            for i2 in s5:            
+                                print(i2)
+                                i1=i2.split('=')
+                                print(i1)                    
+                                columnname=str(i1[0])
+                                value=str(i1[1])
+                                print(columnname)
+                                print(value)
+                                        #插入列
+                                cursor2.execute("select column_name from information_schema.columns where table_name = 'test3'")
+                                item=cursor2.fetchall()
+                                item1=str(item)
+                                if columnname in item1:
+                                    print("列已经存在")
+                                else: 
+                                    cursor2.execute(("ALTER table test3 add %s TEXT(500)"%(columnname)))                        
+                                    db2.commit()
+                                cursor2.execute("update test3 set %s = %s where id =%s"%(columnname,repr(value),ids1))
+                                db2.commit()
+                                print("插入成功")
+                    else:
+                        continue
