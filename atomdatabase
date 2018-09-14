@@ -1,0 +1,217 @@
+# -*- coding: utf-8 -*-
+import pymysql
+
+class DataToMysql:
+    def __init__(self, host, user, password, database):
+        self.host = host
+        self.user = user
+        self.password = password
+        self.database = database
+        self.db = None
+        self.curs = None
+        #print("连接成功") 
+    # 数据库连接
+    def open(self):
+        self.db = pymysql.connect(host=self.host, user=self.user, password=self.password,
+                                  database=self.database)
+        self.curs = self.db.cursor()
+        #print("打开成功")
+
+    # 数据查询
+    def select(self, params1,params2):
+        self.open()
+        
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        self.curs.execute("select %s from %s"%(params1,params2))
+        result = self.curs.fetchall()
+        return result
+    def select1(self, params1):
+        self.open()
+        
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        self.curs.execute("select count(model) from %s"%(params1))
+        result = self.curs.fetchall()
+        return result
+    def select2(self,p1,p2,p3):
+        self.open()
+        
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        self.curs.execute("select %s from %s where id = %s"%(p1,p2,p3))
+        result = self.curs.fetchall()
+        return result
+    def select3(self,p1):
+        self.open()
+        
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        self.curs.execute("select model from %s"%(p1))
+        result = self.curs.fetchall()
+        return result
+    def select4(self,table_name,i_st):
+        self.open()
+        
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        self.curs.execute("select * from %s where model = %s"%(table_name,i_st))
+        result = self.curs.fetchall()
+        return result
+    def select5(self,p2,p1):
+        self.open()
+        print("select %s from %s"%(p2,p1))
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        self.curs.execute("select %s from %s"%(p2,p1))
+        result = self.curs.fetchall()
+        return result
+    def select6(self,p1,p2):
+        self.open()
+        
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        print("select * from %s where id = %s"%(p1,p2))
+        self.curs.execute("select * from %s where id = %s"%(p1,p2))
+        result = self.curs.fetchall()
+        return result
+    def select7(self,p1):
+        self.open()
+        
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        self.curs.execute("select project from %s"%(p1))
+        result = self.curs.fetchall()
+        return result
+        
+    def select_is_exist_columnname(self,columnname,tablename,database_name):
+        self.open()
+        print("SELECT DISTINCT t.table_name, n.SCHEMA_NAME ,m.column_name FROM information_schema.TABLES t, information_schema.SCHEMATA n , information_schema.COLUMNS m WHERE t.table_name = %s AND n.SCHEMA_NAME = %s and m.column_name = %s"%(tablename, database_name, columnname))
+        #result = self.curs.execute("select * from areachart where id=%s", 4)
+        #self.curs.execute("SELECT column_name FROM information_schema.columns where column_name = %s and table_name = %s"%(p1,p2))
+        self.curs.execute("SELECT DISTINCT t.table_name, n.SCHEMA_NAME ,m.column_name FROM information_schema.TABLES t, information_schema.SCHEMATA n , information_schema.COLUMNS m WHERE t.table_name = %s AND n.SCHEMA_NAME = %s and m.column_name = %s"%(tablename, database_name, columnname))
+        result = self.curs.fetchall()
+        return result
+        
+    #第一种目录结构按照行插入
+    def update_daily(self, table_name,p1,p2,p3,p4,p5,p6,p7,p8):
+        self.open()
+        
+        
+        self.curs.execute("update %s set Mon= %s, Tue = %s, Wed = %s,Thu = %s, Fri =  %s, Sat = %s, Sun = %s WHERE model= %s"%(table_name,p1,p2,p3,p4,p5,p6,p7,p8))
+        self.db.commit()
+        return True
+        
+
+    def update_not_daily(self, table_name,p1,p2,p3,p4,p5,p6,p7,p8,q1,q2,q3,q4,q5,q6,q7,q8):
+        self.open()
+        print("qqqqqqqqqqqqqqqqq")
+        print("update %s set Mon= %s, Tue = %s, Wed = %s,Thu = %s, Fri =  %s, Sat = %s, Sun = %s, N = %s,Mon1= %s, Tue1 = %s, Wed1 = %s,Thu1 = %s, Fri1 = %s, Sat1 = %s, Sun1 = %s WHERE model= %s"%(table_name,p1,p2,p3,p4,p5,p6,p7,p8,q1,q2,q3,q4,q5,q6,q7,q8))
+        self.curs.execute("update %s set Mon= %s, Tue = %s, Wed = %s,Thu = %s, Fri =  %s, Sat = %s, Sun = %s, N = %s,Mon1= %s, Tue1 = %s, Wed1 = %s,Thu1 = %s, Fri1 = %s, Sat1 = %s, Sun1 = %s WHERE model= %s"%(table_name,p1,p2,p3,p4,p5,p6,p7,p8,q1,q2,q3,q4,q5,q6,q7,q8))
+        self.db.commit()
+        return True
+        
+#第二种目录结构按照列插入
+    def update(self,table_name,p1,p2,p3):
+        self.open()
+        print("update %s set %s = %s where id = %s"%(table_name,p1,p2,p3))
+        self.curs.execute("update %s set %s = %s where id = %s"%(table_name,p1,p2,p3))
+        self.db.commit()
+        return True
+    def update1(self,table_name,p1,p2,p3):
+        self.open()
+        print("update %s set %s = %s where model = %s"%(table_name,p1,p2,p3))
+        self.curs.execute("update %s set %s = %s where model = %s"%(table_name,p1,p2,p3))
+        self.db.commit()
+        return True
+    def update2(self,table_name,p1,p2,p3):
+        self.open()
+        print("update %s set Pass = %s, Fail = %s where model = %s"%(table_name,p1,p2,p3))
+        self.curs.execute("update %s set Pass = %s, Fail = %s where model = %s"%(table_name,p1,p2,p3))
+        self.db.commit()
+        return True
+    #update dashboard_ci_st_chart1 set model = 'a' where model = 'ARTIK053S';
+    def update3(self,table_name,p1,p2):
+        self.open()
+        print("update %s set model = %s where model = %s"%(table_name,p1,p2))
+        self.curs.execute("update %s set model = %s where model = %s"%(table_name,p1,p2))
+        self.db.commit()
+        return True
+    def update4(self,table_name,p1,p2,p3):
+        self.open()
+        print("update %s set %s = %s where project = %s"%(table_name,p1,p2,p3))
+        self.curs.execute("update %s set %s = %s where project = %s"%(table_name,p1,p2,p3))
+        self.db.commit()
+        return True
+        
+    def update_specify_location(self,table_name,p1,p2,p3,p4):
+        self.open()
+        print("update %s set %s = %s where %s = %s"%(table_name,p1,p2,p3,p4))
+        self.curs.execute("update %s set %s = %s where %s = %s"%(table_name,p1,p2,p3,p4))
+        self.db.commit()
+        return True
+
+
+    def truncate(self,params):
+        self.open()
+    
+        
+        self.curs.execute("TRUNCATE table %s"%(params))
+        self.db.commit()
+        return True
+    def alter(self,p):
+        self.open()
+        self.curs.execute("alter table %s drop column id"%(p))
+        print("ALTER  TABLE  %s ADD id mediumint(6) PRIMARY KEY NOT NULL AUTO_INCREMENT FIRST"%(p))
+        self.curs.execute("ALTER  TABLE  %s ADD id mediumint(6) PRIMARY KEY NOT NULL AUTO_INCREMENT FIRST"%(p))
+        self.db.commit()
+        return True
+        
+    def alter_column_title(self,p,p1):
+        self.open()
+        print("ALTER  TABLE  %s ADD %s VARCHAR(30)"%(p,p1))
+        
+        self.curs.execute("ALTER  TABLE  %s ADD %s VARCHAR(30) default 0"%(p,p1))
+        self.db.commit()
+        return True
+    
+
+    def insert(self,table_name,params1,params2):
+        self.open()
+        print("insert into %s(%s) values(%s)"%(table_name,params1,params2))
+        self.curs.execute("insert into %s(%s) values(%s)"%(table_name,params1,params2))
+        self.db.commit()
+        return True
+    def delete(self,table_name,params1):
+        self.open()
+        print("delete from %s where model = %s"%(table_name,params1))
+        self.curs.execute("delete from %s where model = %s"%(table_name,params1))
+        self.db.commit()
+        return True    
+    def delete1(self,table_name,params1):
+        self.open()
+        print("delete from %s where id = %s"%(table_name,params1))
+        
+        self.curs.execute("delete from %s where id = %s"%(table_name,params1))
+        self.db.commit()
+        return True 
+
+
+    #在对最新的目录格式进行遍历将所有model的名称插入到model这一列
+
+    def model_column(self,table_name,item):
+        self.open()
+        for item_member in item:
+            #print(item_member)
+            self.curs.execute("select model from %s"%(table_name))
+            column =self.curs.fetchall()
+            if not column:
+                #print("insert into dashboard_ci_st_chart1(model) values(%s)"%(repr(item_member)))
+                self.curs.execute("insert into %s(model) values(%s)"%(table_name,repr(item_member)))
+                self.db.commit()
+            else:
+                item_member1 = '('+"'"+item_member+"'"+','+')'
+                item_member2 = eval(item_member1)
+                if item_member2 in column:
+                    continue
+                else:
+                    #print("insert into dashboard_ci_st_chart1(model) values(%s)"%(repr(item_member)))
+                    self.curs.execute("insert into %s(model) values(%s)"%(table_name,repr(item_member)))
+                    self.db.commit()
+        print("chengg")
+
+    def close(self):
+        self.curs.close()
+        self.db.close()
