@@ -1,0 +1,2667 @@
+<html>
+        <head>
+                <style>
+                        table#t01 {font-family: arial, sans-serif;border: 1px solid #dddddd;}
+                        table, th, td {border-collapse: collapse;}
+                        table#t01 th {padding: 5px;text-align: left;border: 1px solid black;}
+                        table#t01 td {padding: 5px;text-align: left;border: 1px solid black;line-height:120%}
+                        table#t01 th {background-color: black;color: white;}
+                        table#t02 tr:nth-child(even) {background-color: #dddddd;}
+                        table#t02 {font-family: arial, sans-serif;border: 1px solid #dddddd;}
+                        table#t02 td {padding: 5px;text-align: left;border: 1px solid black;}
+						table#t03 {font-family: arial, sans-serif;border: 1px solid #dddddd;}
+						table#t03 th {padding: 5px;text-align: left;border: 1px solid black;}
+                        table#t03 td {padding: 10px;text-align: left;border: 1px solid black;line-height:120%}
+                        table#t03 th {background-color: black;color: white;}
+                </style>
+        </head>
+        <body>
+                <h1>TEST END REPORT</h1>
+                <table id="t02">
+                        <tr>
+                                <td>Date</td>
+                                <td>[START] 2018-08-04-01:13:36  ~  [END] 2018-08-05-00:49:24</td>
+                        </tr>
+                        <tr>
+                                <td>MODEL</td>
+                                <td>ARTIK053</td>
+                        </tr>
+						<tr>
+                                <td>Test Result (Total/Pass/Fail)</td>
+                                <td><font color=red><strong>FAIL</strong></font><br> 322 / 321 / 1 </br> </td>
+                        </tr>
+                        <tr>
+                                <td>OS</td>
+                                <td>RTOS</td>
+                        </tr>
+                        <tr>
+                                <td>F/W Version</td>
+                                <td>0053GC02-100-DH40</td>
+                        </tr>
+                        <tr>
+                                <td>CHANGE List</td>
+                                <td></td>
+                        </tr>
+                </table>
+                <br>
+                <br>
+<table id="t03">
+<tr>
+        <th>Total Log URL</th>
+		<td>http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob">URL Link</a></td>
+</tr>
+<tr>
+        <th>TestSuite</th>
+        <td colspan="2">A053_daily_version1.list</td>
+</tr>
+<tr>
+        <th>TestCase</th>
+        <td colspan="2">TC_F_DHCP_016        TC_F_WiFi_055        TC_F_WiFi_092        TC_F_IPv6_003        TC_F_WiFi_060        TC_F_WebSocket_014        <br>TC_F_BSDSocket_015        TC_F_FileSystem_009        TC_F_HTTP_082        TC_F_WebSocket_002        TC_F_SystemIO_GPIO_004        TC_F_HTTP_079        <br>TC_F_ThreadSafe_001        TC_F_DHCP_009        TC_F_HTTP_081        TC_F_xmDNS_003        TC_F_SystemIO_UART_003        TC_F_WiFi_039        <br>TC_F_TLS_052        TC_F_HTTP_080        TC_F_TLS_063        TC_F_WiFi_063        TC_F_TLS_084        TC_F_TLS_073        <br>TC_F_TLS_086        TC_F_TLS_098        TC_F_HTTP_058        TC_F_HTTP_068        TC_F_HTTP_064        TC_F_HTTP_043_Server        <br>TC_F_SystemIO_PWM_003        TC_F_JSON_Parser_001        TC_F_SystemIO_GPIO_002        TC_F_SystemIO_UART_001        TC_F_FileSystem_010        TC_F_WiFi_032        <br>TC_F_Select_009        TC_F_FileSystem_002        TC_F_HTTP_021        TC_F_TLS_088        TC_F_IPv6_005        TC_F_WiFi_072        <br>TC_F_TLS_101        TC_F_SystemIO_ADC_006        TC_F_TLS_056        TC_F_TLS_053        TC_F_WebSocket_009        TC_F_SystemIO_PWM_011        <br>TC_F_TLS_089        TC_F_SystemIO_GPIO_006        TC_F_WebSocket_017        TC_F_JSON_Parser_003        TC_F_SystemIO_GPIO_003        TC_F_WiFi_026        <br>TC_F_BSDSocket_002        TC_F_Power_Off_002        TC_F_HTTP_045        TC_F_WiFi_028        TC_F_HTTP_069        TC_F_WiFi_034        <br>TC_F_TLS_058        TC_F_SystemIO_PWM_012        TC_F_SystemIO_I2C_001        TC_F_FileSystem_014        TC_F_JSON_Parser_004        TC_F_BSDSocket_003        <br>TC_F_TLS_050        TC_F_WiFi_073        TC_F_WebSocket_013        TC_F_WiFi_035        TC_F_DHCP_004        TC_F_SystemIO_UART_009        <br>TC_F_SystemIO_PWM_008        TC_F_SystemIO_UART_010        TC_F_IPv6_001        TC_F_HTTP_034        TC_F_HTTP_062        TC_F_SystemIO_GPIO_012        <br>TC_F_WiFi_001        TC_F_DTLS_003        TC_F_TLS_083        TC_F_HTTP_023        TC_F_WiFi_051        TC_F_HTTP_059        <br>TC_F_Select_010        TC_F_TLS_060        TC_F_WiFi_005        TC_F_SystemIO_GPIO_001        TC_F_FileSystem_005        TC_F_HTTP_083        <br>TC_F_FileSystem_011        TC_F_WiFi_049        TC_F_WiFi_023        TC_F_HTTP_040_Server        TC_F_HTTP_066        TC_F_Select_011        <br>TC_F_SystemIO_GPIO_007        TC_F_HTTP_028        TC_F_SystemIO_ADC_001        TC_F_TLS_076        TC_F_WiFi_076        TC_F_UDP_004        <br>TC_F_TLS_087        TC_F_Poll_004        TC_F_WiFi_013        TC_F_WiFi_082        TC_F_HTTP_025        TC_F_HTTP_033        <br>TC_F_Poll_002        TC_F_WiFi_007        TC_F_TLS_069        TC_F_HTTP_057        TC_F_HTTP_067        TC_F_SystemIO_PWM_006        <br>TC_F_SystemIO_GPIO_016        TC_F_Select_008        TC_F_SystemIO_UART_007        TC_F_Select_003        TC_F_BSDSocket_014        TC_F_TLS_078        <br>TC_F_HTTP_030        TC_F_HTTP_050        TC_F_TLS_071        TC_F_HTTP_053        TC_F_SystemIO_PWM_001        TC_F_HTTP_076        <br>TC_F_WiFi_011        TC_F_SystemIO_PWM_007        TC_F_BSDSocket_013        TC_F_WiFi_031        TC_F_SystemIO_ADC_005        TC_F_WiFi_064        <br>TC_F_JSON_Parser_006        TC_F_BSDSocket_007        TC_F_HTTP_061        TC_F_WebSocket_007        TC_F_SystemIO_GPIO_009        TC_F_WiFi_070        <br>TC_F_Poll_003        TC_F_WiFi_053        TC_F_SystemIO_UART_006        TC_F_HTTP_037        TC_F_SystemIO_I2C_004        TC_F_HTTP_019        <br>TC_F_HTTP_041_Server        TC_F_xmDNS_001        TC_F_IPv4_005        TC_F_SystemIO_UART_008        TC_F_SystemIO_UART_002        TC_F_BSDSocket_021        <br>TC_F_WiFi_012        TC_F_HTTP_018        TC_F_SystemIO_UART_005        TC_F_TLS_067        TC_F_SystemIO_SPI_002        TC_F_FileSystem_001        <br>TC_F_SystemIO_PWM_010        TC_F_HTTP_077        TC_F_WiFi_091        TC_F_HTTP_003        TC_F_HTTP_055        TC_F_SystemIO_PWM_002        <br>TC_F_WiFi_024        TC_F_SystemIO_I2C_003        TC_F_WiFi_069        TC_F_DHCP_017        TC_F_JSON_Parser_002        TC_F_SystemIO_ADC_004        <br>TC_F_SystemIO_UART_011        TC_F_BSDSocket_001        TC_F_WiFi_010        TC_F_Select_004        TC_F_DHCP_006        TC_F_SystemIO_GPIO_011        <br>TC_F_HTTP_074        TC_F_WebSocket_005        TC_F_TCP_001        TC_F_HTTP_072        TC_F_TLS_095        TC_F_WiFi_040        <br>TC_F_WiFi_087        TC_F_TLS_094        TC_F_TLS_093        TC_F_WiFi_075        TC_F_WiFi_036        TC_F_WiFi_037        <br>TC_F_WiFi_083        TC_F_WebSocket_004        TC_F_TLS_051        TC_F_SystemIO_GPIO_008        TC_F_HTTP_056        TC_F_WiFi_009        <br>TC_F_FileSystem_012        TC_F_WiFi_066        TC_F_WiFi_033        TC_F_WiFi_058        TC_F_HTTP_052        TC_F_HTTP_024        <br>TC_F_HTTP_070        TC_F_DHCP_001        TC_F_HTTP_073        TC_F_DHCP_008        TC_F_TLS_057        TC_F_SystemIO_PWM_005        <br>TC_F_HTTP_071        TC_F_HTTP_063        TC_F_DHCP_003        TC_F_TLS_068        TC_F_TLS_074        TC_F_SystemIO_ADC_002        <br>TC_F_WiFi_038        TC_F_WiFi_071        TC_F_TLS_055        TC_F_WebSocket_012        TC_F_SystemIO_ADC_003        TC_F_WiFi_027        <br>TC_F_FileSystem_007        TC_F_xmDNS_002        TC_F_HTTP_051        TC_F_WiFi_093        TC_F_WiFi_086        TC_F_HTTP_032        <br>TC_F_WiFi_006        TC_F_WiFi_054        TC_F_TCP_003        TC_F_BSDSocket_004        TC_F_BSDSocket_018        TC_F_TLS_062        <br>TC_F_WiFi_025        TC_F_Poll_001        TC_F_WiFi_068        TC_F_WiFi_084        TC_F_ThreadSafe_002        TC_F_TLS_064        <br>TC_F_SystemIO_PWM_004        TC_F_WebSocket_015        TC_F_BSDSocket_020        TC_F_FileSystem_004        TC_F_FileSystem_006        TC_F_WiFi_062        <br>TC_F_WiFi_008        TC_F_TLS_096        TC_F_WebSocket_018        TC_F_HTTP_035        TC_F_WebSocket_010        TC_F_WiFi_067        <br>TC_F_SystemIO_UART_004        TC_F_HTTP_042_Server        TC_F_BSDSocket_012        TC_F_SystemIO_GPIO_005        TC_F_TLS_075        TC_F_SystemIO_SPI_001        <br>TC_F_CPU_Idle_001        TC_F_WebSocket_003        TC_F_TLS_091        TC_F_HTTP_078        TC_F_IPv6_004        TC_F_TLS_070        <br>TC_F_HTTP_044        TC_F_FileSystem_008        TC_F_WebSocket_011        TC_F_TLS_061        TC_F_BSDSocket_011        TC_F_TLS_077        <br>TC_F_TLS_092        TC_F_BSDSocket_006        TC_F_WebSocket_016        TC_F_TLS_059        TC_F_DHCP_005        TC_F_TLS_066        <br>TC_F_SystemIO_GPIO_013        TC_F_WebSocket_008        TC_F_WiFi_002        TC_F_WiFi_090        TC_F_WiFi_052        TC_F_HTTP_065        <br>TC_F_WebSocket_001        TC_F_HTTP_036        TC_F_FileSystem_015        TC_F_HTTP_075        TC_F_TLS_065        TC_F_SystemIO_I2C_007        <br>TC_F_BSDSocket_010        TC_F_HTTP_027        TC_F_WiFi_065        TC_F_HTTP_039_Server        TC_F_HTTP_029        TC_F_HTTP_054        <br>TC_F_TLS_054        TC_F_HTTP_031        TC_F_Select_002        TC_F_SystemIO_UART_013        TC_F_SystemIO_UART_014        TC_F_HTTP_002        <br>TC_F_WiFi_048        TC_F_SystemIO_UART_012        TC_F_SystemIO_PWM_009        TC_F_SystemIO_ADC_007        TC_F_HTTP_026        TC_F_IPv4_004        <br>TC_F_IPv6_002        TC_F_HTTP_022        TC_F_JSON_Parser_005        TC_F_WiFi_085        TC_F_Select_006        TC_F_TLS_090        <br>TC_F_HTTP_038_Server        TC_F_BSDSocket_019        TC_F_SystemIO_GPIO_017        TC_F_HTTP_020        TC_F_FileSystem_013        TC_F_TCP_002        <br>TC_F_UDP_003        TC_F_TLS_079        TC_F_WiFi_061        TC_F_HTTP_060        TC_F_Select_001        TC_F_Select_005        <br>TC_F_SystemIO_GPIO_010        TC_F_WebSocket_006        TC_F_FileSystem_003        TC_F_WiFi_077        </td>
+</tr>
+<tr>
+        <th>KEY</th>
+        <td colspan="2">20180804011207fri729isvy1rn05wkn8r4dpf9500ob</td>
+</tr>
+<tr>
+        <th>TESTER</th>
+        <td colspan="2">artik.daily@samsung.com</td>
+</tr>
+</table>
+<br>
+<br>
+<table id="t01">
+<tr>
+        <th>No.</th>
+        <th>Test Case</th>
+        <th>Result</th>
+        <th>Pass/Fail Reason</th>
+        <th>Excution Log</th>
+        <th>TestCase Log</th>
+</tr>
+<tr>
+        <td>1</td>
+        <td>TC_F_WiFi_083.py</td>
+        <td><font color=red><strong>FAIL</strong></font></td>
+        <td>: TC FAIL - Check whether ARTIK can join wifi successful when reboot artik with powercutter during wifi scan: failed</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_083/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61522/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>2</td>
+        <td>TC_F_BSDSocket_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket create: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61546/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>3</td>
+        <td>TC_F_BSDSocket_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket bind: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61505/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>4</td>
+        <td>TC_F_BSDSocket_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket listen: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61798/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>5</td>
+        <td>TC_F_BSDSocket_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket create: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62542/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>6</td>
+        <td>TC_F_BSDSocket_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket client send and receive data lessthan 100 successful: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62124/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>7</td>
+        <td>TC_F_BSDSocket_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket client send and receive data morethan 100 successful: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62145/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>8</td>
+        <td>TC_F_BSDSocket_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket client can connect to server again after quit: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62832/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>9</td>
+        <td>TC_F_BSDSocket_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket client connect to server when server stoped: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62644/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>10</td>
+        <td>TC_F_BSDSocket_012.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket getpeername(): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_012/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61966/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>11</td>
+        <td>TC_F_BSDSocket_013.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket getsockname(): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_013/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62836/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>12</td>
+        <td>TC_F_BSDSocket_014.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket setsockopt(): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_014/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61779/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>13</td>
+        <td>TC_F_BSDSocket_015.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket getsockopt(): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_015/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61721/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>14</td>
+        <td>TC_F_BSDSocket_018.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket select() timeout: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_018/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62068/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>15</td>
+        <td>TC_F_BSDSocket_019.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket select() stdin: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_019/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62341/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>16</td>
+        <td>TC_F_BSDSocket_020.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check no leakage when socket abnormal after server power off to on: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_020/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62820/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>17</td>
+        <td>TC_F_BSDSocket_021.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check BSD socket sendto()/recvfrom(), multicast: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_BSDSocket_021/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62874/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>18</td>
+        <td>TC_F_CPU_Idle_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - CPU can enter idle state (using WFI, if possible) to reduce power consumption: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_CPU_Idle_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61686/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>19</td>
+        <td>TC_F_DHCP_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP client can get IP from DHCP server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61564/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>20</td>
+        <td>TC_F_DHCP_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP server can be started successfully when ARTIK board was setup as softAP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62551/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>21</td>
+        <td>TC_F_DHCP_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP server can be stopped successfully: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62502/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>22</td>
+        <td>TC_F_DHCP_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP server start failed when ARTIK board was not connected to network: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61645/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>23</td>
+        <td>TC_F_DHCP_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP server start failed when DHCP server already started: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61867/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>24</td>
+        <td>TC_F_DHCP_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP server stop failed when DHCP server was not started: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61931/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>25</td>
+        <td>TC_F_DHCP_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP server stop failed when DHCP server was already stopped: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61830/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>26</td>
+        <td>TC_F_DHCP_016.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP daemon exist in process list when DHCP server started: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_016/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61602/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>27</td>
+        <td>TC_F_DHCP_017.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - DHCP daemon disappeared in process list when DHCP server stopped: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DHCP_017/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61731/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>28</td>
+        <td>TC_F_DTLS_003_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Support DTLS v1.2 with SSS(Enable HW Accelerator): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_DTLS_00/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62185/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>29</td>
+        <td>TC_F_FileSystem_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs automatically mount to /mnt after reboot: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61630/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>30</td>
+        <td>TC_F_FileSystem_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs erase blocks and write with 1 random data: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61822/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>31</td>
+        <td>TC_F_FileSystem_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs erase all blocks and write with 1 random data: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61924/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>32</td>
+        <td>TC_F_FileSystem_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs seek/read file random line 1 times: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61518/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>33</td>
+        <td>TC_F_FileSystem_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs seek/write file random line 1 times: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61638/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>34</td>
+        <td>TC_F_FileSystem_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs available blocks after write/erase same file: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61694/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>35</td>
+        <td>TC_F_FileSystem_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Exception test of reboot while writing filesystem should not be corrupted: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61650/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>36</td>
+        <td>TC_F_FileSystem_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Exception test of POO(power on/off) while writing filesystem should not be corrupted: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61870/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>37</td>
+        <td>TC_F_FileSystem_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs append test: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61550/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>38</td>
+        <td>TC_F_FileSystem_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs create file with valid maximum linecount: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61618/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>39</td>
+        <td>TC_F_FileSystem_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Exception test of reboot while writing then delete file well: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61740/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>40</td>
+        <td>TC_F_FileSystem_012.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs write file to folder under /mnt: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_012/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61579/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>41</td>
+        <td>TC_F_FileSystem_013.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check smartfs delete maxline file(if TC_F_FileSystem_010.py pass, this test pass): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_013/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61599/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>42</td>
+        <td>TC_F_FileSystem_014.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Exception test of smartfs maxline append test(precondition is F_010 should pass): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_014/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61797/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>43</td>
+        <td>TC_F_FileSystem_015.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Exception test of smartfs reboot recovery- Reboot while writing file: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_FileSystem_015/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61532/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>44</td>
+        <td>TC_F_HTTP_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether http server and https sever start is ok: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61545/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>45</td>
+        <td>TC_F_HTTP_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether http server and https server stop is ok: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61810/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>46</td>
+        <td>TC_F_HTTP_018.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https get method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_018/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62056/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>47</td>
+        <td>TC_F_HTTP_019.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http get method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_019/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62470/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>48</td>
+        <td>TC_F_HTTP_020.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - https post method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_020/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62859/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>49</td>
+        <td>TC_F_HTTP_021.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http post method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_021/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61963/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>50</td>
+        <td>TC_F_HTTP_022.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https put method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_022/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61998/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>51</td>
+        <td>TC_F_HTTP_023.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http put method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_023/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62173/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>52</td>
+        <td>TC_F_HTTP_024.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https delete method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_024/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61987/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>53</td>
+        <td>TC_F_HTTP_025.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http delete method of server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_025/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62153/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>54</td>
+        <td>TC_F_HTTP_026.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https get method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_026/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62810/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>55</td>
+        <td>TC_F_HTTP_027.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http get method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_027/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62858/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>56</td>
+        <td>TC_F_HTTP_028.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - https post method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_028/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62355/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>57</td>
+        <td>TC_F_HTTP_029.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http post method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_029/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62844/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>58</td>
+        <td>TC_F_HTTP_030.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https put method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_030/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62350/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>59</td>
+        <td>TC_F_HTTP_031.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http put method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_031/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61967/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>60</td>
+        <td>TC_F_HTTP_032.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https delete method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_032/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62853/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>61</td>
+        <td>TC_F_HTTP_033.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http delete method of client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_033/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62557/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>62</td>
+        <td>TC_F_HTTP_034.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https post method with chunked: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_034/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62862/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>63</td>
+        <td>TC_F_HTTP_035.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http post method with chunked: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_035/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62034/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>64</td>
+        <td>TC_F_HTTP_036.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https put method with chunked: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_036/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61951/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>65</td>
+        <td>TC_F_HTTP_037.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http put method with chunked: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_037/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62052/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>66</td>
+        <td>TC_F_HTTP_038_Server.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check multiclient send get method to server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_038_Server/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62888/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>67</td>
+        <td>TC_F_HTTP_039_Server.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check multiclient send post method to server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_039_Server/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62867/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>68</td>
+        <td>TC_F_HTTP_040_Server.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check multiclient send put method to server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_040_Server/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62871/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>69</td>
+        <td>TC_F_HTTP_041_Server.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check multiclient send requests to server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_041_Server/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62899/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>70</td>
+        <td>TC_F_HTTP_042_Server.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check multiclient send requests to server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_042_Server/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62869/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>71</td>
+        <td>TC_F_HTTP_043_Server.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check multiclient send requests to server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_043_Server/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62865/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>72</td>
+        <td>TC_F_HTTP_044.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check Server support multi instances so that it can run two servers at a time: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_044/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61974/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>73</td>
+        <td>TC_F_HTTP_045.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http webpage with post method: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_045/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62846/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>74</td>
+        <td>TC_F_HTTP_050.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check when https server is busy with put method: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_050/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62786/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>75</td>
+        <td>TC_F_HTTP_051.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check when http server is busy with put method: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_051/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61504/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>76</td>
+        <td>TC_F_HTTP_052.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https webpage with post method: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_052/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62131/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>77</td>
+        <td>TC_F_HTTP_053.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https get method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_053/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62175/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>78</td>
+        <td>TC_F_HTTP_054.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https post method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_054/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62692/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>79</td>
+        <td>TC_F_HTTP_055.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https put method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_055/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62354/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>80</td>
+        <td>TC_F_HTTP_056.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https delete method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_056/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62028/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>81</td>
+        <td>TC_F_HTTP_057.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http get method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_057/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62852/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>82</td>
+        <td>TC_F_HTTP_058.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http post method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_058/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62140/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>83</td>
+        <td>TC_F_HTTP_059.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http put method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_059/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62682/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>84</td>
+        <td>TC_F_HTTP_060.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http delete method of server and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_060/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62855/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>85</td>
+        <td>TC_F_HTTP_061.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https post method with chunked and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_061/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62856/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>86</td>
+        <td>TC_F_HTTP_062.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https put method with chunked and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_062/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62553/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>87</td>
+        <td>TC_F_HTTP_063.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http post method with chunked and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_063/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62847/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>88</td>
+        <td>TC_F_HTTP_064.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http put method with chunked and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_064/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62824/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>89</td>
+        <td>TC_F_HTTP_065.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check https webpage with post method and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_065/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62822/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>90</td>
+        <td>TC_F_HTTP_066.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check http webpage with post method and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_066/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62711/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>91</td>
+        <td>TC_F_HTTP_067.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check Server support multi instances so that it can run two servers at a time and server as softap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_067/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62815/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>92</td>
+        <td>TC_F_HTTP_068.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send get method with using parameter of url to server in secure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_068/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62096/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>93</td>
+        <td>TC_F_HTTP_069.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send get method with using parameter of url to server in insecure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_069/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62705/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>94</td>
+        <td>TC_F_HTTP_070.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send post method with using parameter of url to server in secure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_070/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61965/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>95</td>
+        <td>TC_F_HTTP_071.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send post method with using parameter of url to server in insecure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_071/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62831/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>96</td>
+        <td>TC_F_HTTP_072.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send put method with using parameter of url to server in secure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_072/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62078/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>97</td>
+        <td>TC_F_HTTP_073.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send put method with using parameter of url to server in insecure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_073/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62689/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>98</td>
+        <td>TC_F_HTTP_074.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send delete method with using parameter of url to server in secure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_074/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62697/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>99</td>
+        <td>TC_F_HTTP_075.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send delete method with using parameter of url to server in insecure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_075/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62524/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>100</td>
+        <td>TC_F_HTTP_076.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send post method with sync mode to server in secure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_076/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62709/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>101</td>
+        <td>TC_F_HTTP_077.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send post method with sync mode to server in insecure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_077/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62327/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>102</td>
+        <td>TC_F_HTTP_078.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send put method with sync mode to server in secure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_078/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62700/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>103</td>
+        <td>TC_F_HTTP_079.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send put method with sync mode to server in insecure mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_079/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62694/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>104</td>
+        <td>TC_F_HTTP_080.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send requests to server successfully after interruptting the network with security mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_080/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62704/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>105</td>
+        <td>TC_F_HTTP_081.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send requests to server successfully after interruptting the network with insecurity mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_081/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62857/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>106</td>
+        <td>TC_F_HTTP_082.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send requests to server successfully after recovering the network with security mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_082/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62673/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>107</td>
+        <td>TC_F_HTTP_083.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check client send requests to server successfully after recovering the network with insecurity mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_HTTP_083/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62042/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>108</td>
+        <td>TC_F_IPv4_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check device ping valid ip address: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_IPv4_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62537/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>109</td>
+        <td>TC_F_IPv4_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check device ping invalid ip address: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_IPv4_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62190/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>110</td>
+        <td>TC_F_IPv6_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Start IPv6 Address: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_IPv6_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61539/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>111</td>
+        <td>TC_F_IPv6_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Ping IPv6 Address: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_IPv6_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62038/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>112</td>
+        <td>TC_F_IPv6_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Exception test of ping invalid IP address: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_IPv6_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62813/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>113</td>
+        <td>TC_F_IPv6_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - TCP data transfer  based on iperf: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_IPv6_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62046/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>114</td>
+        <td>TC_F_IPv6_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Device can Send/Receive IPv6 multicast packet: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_IPv6_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62710/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>115</td>
+        <td>TC_F_JSON_Parser_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Parse the neseted object : success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_JSON_Parser_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61812/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>116</td>
+        <td>TC_F_JSON_Parser_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Parse the array: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_JSON_Parser_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61552/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>117</td>
+        <td>TC_F_JSON_Parser_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Parse the neseted array: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_JSON_Parser_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61848/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>118</td>
+        <td>TC_F_JSON_Parser_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Parse the neseted array and object: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_JSON_Parser_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61785/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>119</td>
+        <td>TC_F_JSON_Parser_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Parse the  array, whose element is json object: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_JSON_Parser_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61809/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>120</td>
+        <td>TC_F_JSON_Parser_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Parse the xml string: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_JSON_Parser_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61570/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>121</td>
+        <td>TC_F_Poll_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check POLL_IN EVENT Detecting for stdin: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Poll_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61542/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>122</td>
+        <td>TC_F_Poll_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check POLL_IN EVENT Detecting for fifo: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Poll_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61580/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>123</td>
+        <td>TC_F_Poll_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check POLL_IN EVENT time out: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Poll_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61547/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>124</td>
+        <td>TC_F_Poll_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check detecting stdin and fifo fd randomly in thread: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Poll_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61925/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>125</td>
+        <td>TC_F_Power_Off_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - artik can reset successfully with reboot command: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Power_Off_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61636/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>126</td>
+        <td>TC_F_Select_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select STDIN fd: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61533/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>127</td>
+        <td>TC_F_Select_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select File fd: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61757/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>128</td>
+        <td>TC_F_Select_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select FIFO test: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61921/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>129</td>
+        <td>TC_F_Select_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select PIPE fd: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61632/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>130</td>
+        <td>TC_F_Select_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select Sock fd: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61610/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>131</td>
+        <td>TC_F_Select_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select socket fd: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62555/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>132</td>
+        <td>TC_F_Select_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select thread read same file: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61762/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>133</td>
+        <td>TC_F_Select_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select thread read different file: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61748/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>134</td>
+        <td>TC_F_Select_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select thread write different file: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61789/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>135</td>
+        <td>TC_F_Select_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check select thread socket send and receive data: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_Select_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61601/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>136</td>
+        <td>TC_F_SystemIO_ADC_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check there should have the adc device node under /dev for all adc port.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_ADC_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62115/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>137</td>
+        <td>TC_F_SystemIO_ADC_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the adc device node under /dev by read only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_ADC_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61854/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>138</td>
+        <td>TC_F_SystemIO_ADC_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the adc device node under /dev by write only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_ADC_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61811/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>139</td>
+        <td>TC_F_SystemIO_ADC_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the adc device node under /dev by read and write mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_ADC_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61858/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>140</td>
+        <td>TC_F_SystemIO_ADC_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the trigger value, it will have data for channel 1 ~ 4, then close the device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_ADC_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62159/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>141</td>
+        <td>TC_F_SystemIO_ADC_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Read the channel 0 data from ADC device node under /dev without open the adc device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_ADC_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62066/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>142</td>
+        <td>TC_F_SystemIO_ADC_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the trigger value without open the adc device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_ADC_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61991/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>143</td>
+        <td>TC_F_SystemIO_GPIO_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check there should have the gpio device node under /dev for all gpio port.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61907/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>144</td>
+        <td>TC_F_SystemIO_GPIO_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61527/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>145</td>
+        <td>TC_F_SystemIO_GPIO_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by write only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61890/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>146</td>
+        <td>TC_F_SystemIO_GPIO_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read and write mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61790/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>147</td>
+        <td>TC_F_SystemIO_GPIO_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Change the direction to be out.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61863/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>148</td>
+        <td>TC_F_SystemIO_GPIO_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Change the direction to be in.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62079/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>149</td>
+        <td>TC_F_SystemIO_GPIO_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Change one device node s output value by another device node.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62117/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>150</td>
+        <td>TC_F_SystemIO_GPIO_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read only mode, it can read only, can not write.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62163/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>151</td>
+        <td>TC_F_SystemIO_GPIO_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by write only mode, it can write only, can not read.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61993/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>152</td>
+        <td>TC_F_SystemIO_GPIO_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read and write mode, it can read and write, and check write 0, 1, 9 to gpio device node under /dev.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62022/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>153</td>
+        <td>TC_F_SystemIO_GPIO_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Change the direction to be out, write 1 ~ 9 to gpio device node under dev, the led on sensor board will turn on.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61911/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>154</td>
+        <td>TC_F_SystemIO_GPIO_012.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Change the direction to be out, write 0 to gpio device node under /dev, the led on sensor board will turn off.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_012/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62095/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>155</td>
+        <td>TC_F_SystemIO_GPIO_013.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Change the direction to be in, write 1 ~ 9 and 0 to gpio device node under dev, the led on sensor board will not turn on, then close the device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_013/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61569/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>156</td>
+        <td>TC_F_SystemIO_GPIO_016.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - GPIO read and write without open the gpio device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_016/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61815/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>157</td>
+        <td>TC_F_SystemIO_GPIO_017.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Change the direction to be out without open the gpio device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_GPIO_017/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61744/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>158</td>
+        <td>TC_F_SystemIO_I2C_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check there should have the i2c device node under /dev for all i2c port.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_I2C_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61988/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>159</td>
+        <td>TC_F_SystemIO_I2C_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the i2c device node under /dev.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_I2C_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61960/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>160</td>
+        <td>TC_F_SystemIO_I2C_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open and read size 1 from the i2c device node under /dev.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_I2C_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62065/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>161</td>
+        <td>TC_F_SystemIO_I2C_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open, write 0 and 3 size to the i2c device node under /dev.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_I2C_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62103/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>162</td>
+        <td>TC_F_SystemIO_PWM_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check there should have the pwm device node under dev for all pwm port.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61787/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>163</td>
+        <td>TC_F_SystemIO_PWM_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open pwm device nodes under dev by read only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61598/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>164</td>
+        <td>TC_F_SystemIO_PWM_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open device nodes under dev by write only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61605/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>165</td>
+        <td>TC_F_SystemIO_PWM_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open device nodes under dev by read and write mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62075/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>166</td>
+        <td>TC_F_SystemIO_PWM_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node under dev s period and duty cycle, then can get the period and duty.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61844/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>167</td>
+        <td>TC_F_SystemIO_PWM_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node (0, 3, 4, 5) under /dev s period and duty cycle, then start it, the led on sensor board will turn on.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61982/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>168</td>
+        <td>TC_F_SystemIO_PWM_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node (0, 3, 4, 5) under /dev s period and duty cycle, then start it, the led on sensor board will turn on, then stop it, the led on sensor board will turn off.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61514/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>169</td>
+        <td>TC_F_SystemIO_PWM_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node (1, 2) under /dev s period and duty cycle, then start it, the buzzer from sensor board will have a voice.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62177/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>170</td>
+        <td>TC_F_SystemIO_PWM_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node (1, 2) under /dev s period and duty cycle, then start it, the buzzer from sensor board will have a voice, then stop it, buzzer from sensor board will stop.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61828/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>171</td>
+        <td>TC_F_SystemIO_PWM_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node (1, 2) under /dev s period and duty cycle for different value, then start it, the buzzer from sensor board will have a voice with different frequency, then close the device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61899/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>172</td>
+        <td>TC_F_SystemIO_PWM_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node under /dev s period and duty cycle without open the pwm device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61741/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>173</td>
+        <td>TC_F_SystemIO_PWM_012.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the device node under /dev s period and duty cycle with abnormal value, then can get the period and duty.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_PWM_012/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61769/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>174</td>
+        <td>TC_F_SystemIO_SPI_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the spi device node.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_SPI_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61813/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>175</td>
+        <td>TC_F_SystemIO_SPI_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the spi device node, then read it.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_SPI_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62014/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>176</td>
+        <td>TC_F_SystemIO_UART_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check UART driver should export its device node under /dev, for example, /dev/ttyS2.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61861/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>177</td>
+        <td>TC_F_SystemIO_UART_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62069/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>178</td>
+        <td>TC_F_SystemIO_UART_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by write only mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61736/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>179</td>
+        <td>TC_F_SystemIO_UART_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read and write mode.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62093/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>180</td>
+        <td>TC_F_SystemIO_UART_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read and write mode, set attributes then get attributes.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62106/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>181</td>
+        <td>TC_F_SystemIO_UART_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read and write mode, it can read and write, and check write different length content then read it, then close it.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62161/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>182</td>
+        <td>TC_F_SystemIO_UART_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read and write mode, then read, and check there is no hung up error.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62181/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>183</td>
+        <td>TC_F_SystemIO_UART_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read only mode, can not write to it.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62017/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>184</td>
+        <td>TC_F_SystemIO_UART_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by write only mode, write to it, then can not read from it.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62059/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>185</td>
+        <td>TC_F_SystemIO_UART_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set attributes without open the device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61838/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>186</td>
+        <td>TC_F_SystemIO_UART_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Get attributes without open the device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62012/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>187</td>
+        <td>TC_F_SystemIO_UART_012.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Write to it without open the device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_012/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62063/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>188</td>
+        <td>TC_F_SystemIO_UART_013.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Read from it without open the device.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_013/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62071/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>189</td>
+        <td>TC_F_SystemIO_UART_014.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Open the device by read and write mode, set attributes with abnormal speed, then get attributes.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_SystemIO_UART_014/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61611/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>190</td>
+        <td>TC_F_TCP_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check device can send TCP packet: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TCP_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62091/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>191</td>
+        <td>TC_F_TCP_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check device can recive TCP packet : success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TCP_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62843/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>192</td>
+        <td>TC_F_TCP_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check the TCP data transfer  based on iperf : success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TCP_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62695/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>193</td>
+        <td>TC_F_TLS_050_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-256-CCM without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62693/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>194</td>
+        <td>TC_F_TLS_051_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check Perform key agreement primitives using DHE without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61971/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>195</td>
+        <td>TC_F_TLS_052_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-256-CBC-SHA256 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62346/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>196</td>
+        <td>TC_F_TLS_053_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-256-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62675/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>197</td>
+        <td>TC_F_TLS_054_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-256-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62105/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>198</td>
+        <td>TC_F_TLS_055_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-256-CCM-8 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62543/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>199</td>
+        <td>TC_F_TLS_056_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-256-CCM-8 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62469/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>200</td>
+        <td>TC_F_TLS_057_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256 withOUT SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62089/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>201</td>
+        <td>TC_F_TLS_058_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-128-GCM-SHA256 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62504/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>202</td>
+        <td>TC_F_TLS_059_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-128-CCM without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_05/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62073/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>203</td>
+        <td>TC_F_TLS_060_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-128-CCM without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62119/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>204</td>
+        <td>TC_F_TLS_061_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA256 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62667/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>205</td>
+        <td>TC_F_TLS_062_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-128-CBC-SHA256 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61978/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>206</td>
+        <td>TC_F_TLS_063_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61509/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>207</td>
+        <td>TC_F_TLS_064_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-128-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62135/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>208</td>
+        <td>TC_F_TLS_065_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-AES-128-CCM-8 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62180/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>209</td>
+        <td>TC_F_TLS_066_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-AES-128-CCM-8 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62143/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>210</td>
+        <td>TC_F_TLS_067_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-ECDHE-ECDSA-WITH-3DES-EDE-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62538/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>211</td>
+        <td>TC_F_TLS_068_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Perform key agreement primitives using TLS-DHE-RSA-WITH-3DES-EDE-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62535/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>212</td>
+        <td>TC_F_TLS_069_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt a key value using TLS-RSA-WITH-AES-256-CCM without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_06/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62082/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>213</td>
+        <td>TC_F_TLS_070_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt a key value using RSA: TLS-RSA-WITH-AES-256-CBC-SHA256 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62707/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>214</td>
+        <td>TC_F_TLS_071_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt a key value using RSA: TLS-RSA-WITH-AES-256-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62568/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>215</td>
+        <td>TC_F_TLS_073_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt a key value using RSA: TLS-RSA-WITH-AES-256-CCM-8 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62699/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>216</td>
+        <td>TC_F_TLS_074_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt a key value using RSA: TLS-RSA-WITH-AES-128-GCM-SHA256 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62306/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>217</td>
+        <td>TC_F_TLS_075_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt a key value using RSA: TLS-RSA-WITH-AES-128-CCM without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62183/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>218</td>
+        <td>TC_F_TLS_076_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Client and server can connect based on TLS-RSA-WITH-AES-128-CBC-SHA256 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62712/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>219</td>
+        <td>TC_F_TLS_077_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt a key value using RSA: TLS-RSA-WITH-AES-128-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61995/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>220</td>
+        <td>TC_F_TLS_078_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt a key value using RSA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61802/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>221</td>
+        <td>TC_F_TLS_079_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Decrypt a key value using RSA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_07/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61916/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>222</td>
+        <td>TC_F_TLS_083_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt data using AES: TLS-RSA-WITH-AES-128-CCM-8 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_08/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62549/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>223</td>
+        <td>TC_F_TLS_084_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt data using TDES:TLS-RSA-WITH-3DES-EDE-CBC-SHA without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_08/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62137/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>224</td>
+        <td>TC_F_TLS_086_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt data using AES without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_08/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61855/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>225</td>
+        <td>TC_F_TLS_087_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Encrypt/Decrypt data using TDES without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_08/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61919/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>226</td>
+        <td>TC_F_TLS_088_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Support for generating true number without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_08/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62148/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>227</td>
+        <td>TC_F_TLS_089_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Support TLS v1.2 without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_08/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62187/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>228</td>
+        <td>TC_F_TLS_090_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Generate a SHA-1 message digest without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61530/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>229</td>
+        <td>TC_F_TLS_091_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - generate SHA-2(SHA-224) message digest without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61836/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>230</td>
+        <td>TC_F_TLS_092_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - generate SHA-2(SHA-256) message digest without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61536/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>231</td>
+        <td>TC_F_TLS_093_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Generate/verify data integrity with SHA1 Without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61859/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>232</td>
+        <td>TC_F_TLS_094_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Generate/verify data integrity with SHA-224 Without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61554/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>233</td>
+        <td>TC_F_TLS_095_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Generate/verify data integrity with SHA-256 Without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61548/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>234</td>
+        <td>TC_F_TLS_096_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Generate/verify RSA digital signature without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61794/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>235</td>
+        <td>TC_F_TLS_098_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - x509 Generate and load Certification without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_09/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61553/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>236</td>
+        <td>TC_F_TLS_101_with_TizenRT.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check Encrypt/Decrypt data using cipher suites for Just Works OTM without SSS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_TLS_10/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62841/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>237</td>
+        <td>TC_F_ThreadSafe_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check main thread wait for new thread quit first: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_ThreadSafe_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61846/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>238</td>
+        <td>TC_F_ThreadSafe_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check new thread should quit when main thread quit: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_ThreadSafe_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61864/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>239</td>
+        <td>TC_F_UDP_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check the UDP data transfer based on iperf : success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_UDP_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62150/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>240</td>
+        <td>TC_F_UDP_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - send and receive UDP packets based on DHCP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_UDP_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61776/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>241</td>
+        <td>TC_F_WebSocket_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server set up without TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61593/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>242</td>
+        <td>TC_F_WebSocket_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server set up with TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61590/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>243</td>
+        <td>TC_F_WebSocket_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - One board only support one Websocket server set up without TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61786/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>244</td>
+        <td>TC_F_WebSocket_004.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - One board only support one Websocket server set up with TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_004/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61862/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>245</td>
+        <td>TC_F_WebSocket_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket client set up without TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62787/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>246</td>
+        <td>TC_F_WebSocket_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket client set up with TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62099/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>247</td>
+        <td>TC_F_WebSocket_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection without TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62127/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>248</td>
+        <td>TC_F_WebSocket_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection without TLS and send 16 Bytes packets: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61983/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>249</td>
+        <td>TC_F_WebSocket_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection without TLS and send 1000 Bytes packets: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62792/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>250</td>
+        <td>TC_F_WebSocket_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection without  TLS and send 5000 Bytes packets: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62112/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>251</td>
+        <td>TC_F_WebSocket_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection with TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62860/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>252</td>
+        <td>TC_F_WebSocket_012.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection with TLS and send 16 Bytes packets: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_012/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62861/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>253</td>
+        <td>TC_F_WebSocket_013.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection with TLS and send 1000 Bytes packets: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_013/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62485/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>254</td>
+        <td>TC_F_WebSocket_014.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and client connection with TLS and send 5000 Bytes packets: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_014/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62650/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>255</td>
+        <td>TC_F_WebSocket_015.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and two clients connection without TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_015/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62907/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>256</td>
+        <td>TC_F_WebSocket_016.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Websocket server and two clients connection with TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_016/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62905/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>257</td>
+        <td>TC_F_WebSocket_017.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - One board set as server and client,the other set as client without TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_017/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62349/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>258</td>
+        <td>TC_F_WebSocket_018.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - One board set as server and client,the other set as client with TLS: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WebSocket_018/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61956/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>259</td>
+        <td>TC_F_WiFi_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether have AP information or not when it is scanning.: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61561/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>260</td>
+        <td>TC_F_WiFi_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Possible to scan other AP during SoftAP Mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61607/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>261</td>
+        <td>TC_F_WiFi_005.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on wpa2_tkip SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_005/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62522/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>262</td>
+        <td>TC_F_WiFi_006.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on wpa2_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_006/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62812/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>263</td>
+        <td>TC_F_WiFi_007.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on wpa2_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_007/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62688/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>264</td>
+        <td>TC_F_WiFi_008.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on wpa_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_008/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62544/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>265</td>
+        <td>TC_F_WiFi_009.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on wpa_tkip SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_009/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62086/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>266</td>
+        <td>TC_F_WiFi_010.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on wpa_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_010/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62669/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>267</td>
+        <td>TC_F_WiFi_011.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on open SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_011/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62818/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>268</td>
+        <td>TC_F_WiFi_012.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Multi-station connect with SoftAP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_012/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62883/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>269</td>
+        <td>TC_F_WiFi_013.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether stop artik AP mode successful: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_013/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61565/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>270</td>
+        <td>TC_F_WiFi_023.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(dlink) based on wpa2_tkip SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_023/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61558/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>271</td>
+        <td>TC_F_WiFi_024.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(dlink) based on wpa2_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_024/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61806/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>272</td>
+        <td>TC_F_WiFi_025.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(dlink) based on wpa2_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_025/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61560/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>273</td>
+        <td>TC_F_WiFi_026.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(dlink) based on wpa_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_026/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61814/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>274</td>
+        <td>TC_F_WiFi_027.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(dlink) based on wpa_tkip SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_027/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61820/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>275</td>
+        <td>TC_F_WiFi_028.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(dlink) based on wpa_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_028/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61841/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>276</td>
+        <td>TC_F_WiFi_031.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(tp-link) based on wpa2_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_031/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61586/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>277</td>
+        <td>TC_F_WiFi_032.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(tp-link) based on wpa2_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_032/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61594/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>278</td>
+        <td>TC_F_WiFi_033.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(tp-link) based on wpa_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_033/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61556/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>279</td>
+        <td>TC_F_WiFi_034.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(tp-link) based on wpa_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_034/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61649/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>280</td>
+        <td>TC_F_WiFi_035.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(netgear) based on wpa2_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_035/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61597/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>281</td>
+        <td>TC_F_WiFi_036.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(netgear) based on wpa2_tkip SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_036/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61511/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>282</td>
+        <td>TC_F_WiFi_037.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(netgear) based on wpa2_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_037/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61774/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>283</td>
+        <td>TC_F_WiFi_038.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(netgear) based on wpa_aes SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_038/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61600/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>284</td>
+        <td>TC_F_WiFi_039.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(netgear) based on wpa_tkip SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_039/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61526/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>285</td>
+        <td>TC_F_WiFi_040.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with variable APs(netgear) based on wpa_mixed SECURITY mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_040/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61759/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>286</td>
+        <td>TC_F_WiFi_048.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - leave WiFi connection: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_048/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61716/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>287</td>
+        <td>TC_F_WiFi_049.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check WiFi reconnect: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_049/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61765/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>288</td>
+        <td>TC_F_WiFi_051.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - The two board can ping success each other: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_051/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62672/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>289</td>
+        <td>TC_F_WiFi_052.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Device can connect to 802.11 b AP (2.4GHz): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_052/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61752/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>290</td>
+        <td>TC_F_WiFi_053.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Device can connect to 802.11 g AP (2.4GHz): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_053/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61512/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>291</td>
+        <td>TC_F_WiFi_054.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Device can connect to 802.11 n AP (2.4GHz): success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_054/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61788/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>292</td>
+        <td>TC_F_WiFi_055.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - can set country code: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_055/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61804/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>293</td>
+        <td>TC_F_WiFi_058.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Interface wl0 up and down: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_058/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61617/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>294</td>
+        <td>TC_F_WiFi_060.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Soft AP as iperf server,and station board as iperf client: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_060/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62060/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>295</td>
+        <td>TC_F_WiFi_061.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Soft AP as iperf client and station board as iperf server: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_061/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62854/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>296</td>
+        <td>TC_F_WiFi_062.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - can set country code: KR and support 1~13 CHANNEL: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_062/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62004/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>297</td>
+        <td>TC_F_WiFi_063.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - can set country code: CN and support 1~13 CHANNEL: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_063/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62156/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>298</td>
+        <td>TC_F_WiFi_064.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - can set country code: US and support 1~11 CHANNEL: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_064/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62835/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>299</td>
+        <td>TC_F_WiFi_065.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check wifi status after connect wifi: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_065/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61690/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>300</td>
+        <td>TC_F_WiFi_066.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode then set to station mode : success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_066/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62536/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>301</td>
+        <td>TC_F_WiFi_067.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode twice: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_067/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61559/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>302</td>
+        <td>TC_F_WiFi_068.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set the trx power to 12dbm(min), then use wifi scan: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_068/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61817/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>303</td>
+        <td>TC_F_WiFi_069.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - change country code from CN to KR: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_069/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61734/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>304</td>
+        <td>TC_F_WiFi_070.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection in SSID and password as SSID: !@#_$* &abcdefghijklmnopqrstuvwx password: !@#$*^_& *: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_070/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62344/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>305</td>
+        <td>TC_F_WiFi_071.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode based on all channel: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_071/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61623/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>306</td>
+        <td>TC_F_WiFi_072.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Set artik to AP mode then use wifi leave command: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_072/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61573/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>307</td>
+        <td>TC_F_WiFi_073.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Success to join SoftAP after stop and start SoftAP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_073/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/62347/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>308</td>
+        <td>TC_F_WiFi_075.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Artik not hang up when input wrong SSID of AP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_075/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61555/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>309</td>
+        <td>TC_F_WiFi_076.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Artik not hang up when input wrong password of AP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_076/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61596/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>310</td>
+        <td>TC_F_WiFi_077.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Artik not hang up when input wrong security mode of AP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_077/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61515/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>311</td>
+        <td>TC_F_WiFi_082.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether ARTIK can join wifi successful when reboot artik with powercutter during wifi stratsta: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_082/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61591/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>312</td>
+        <td>TC_F_WiFi_084.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether ARTIK can join wifi successful when reboot artik with powercutter during wifi join AP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_084/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61568/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>313</td>
+        <td>TC_F_WiFi_085.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether ARTIK can join and leave wifi successful when reboot artik with powercutter during leave wifi: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_085/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61628/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>314</td>
+        <td>TC_F_WiFi_086.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether ARTIK can startap successful when reboot artik with  powercutter during startap: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_086/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61781/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>315</td>
+        <td>TC_F_WiFi_087.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check whether ARTIK can startap and stopap successful when reboot artik with powercutter during stop AP: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_087/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61510/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>316</td>
+        <td>TC_F_WiFi_090.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with tenda AP based on wpa2_aes security mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_090/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61541/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>317</td>
+        <td>TC_F_WiFi_091.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with tenda AP based on wpa2_mixed security mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_091/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61851/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>318</td>
+        <td>TC_F_WiFi_092.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with tenda AP based on wpa_aes security mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_092/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61768/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>319</td>
+        <td>TC_F_WiFi_093.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - WiFi Connection with tenda AP based on wpa_mixed security mode: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_WiFi_093/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61614/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>320</td>
+        <td>TC_F_xmDNS_001.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check start mdns server is ok: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_xmDNS_001/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61563/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>321</td>
+        <td>TC_F_xmDNS_002.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check stop mdns server is ok: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_xmDNS_002/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61728/console">URL/TestCase Log</a></td>
+</tr>
+<tr>
+        <td>322</td>
+        <td>TC_F_xmDNS_003.py</td>
+        <td><font color=blue><strong>PASS</strong></font></td>
+        <td>: TC PASS - Check get server hostname is ok: success</td>
+        <td><a href="http://105.128.30.59:8080/Fileshare/SRCX/2018-08-04-01-12-11_20180804011207fri729isvy1rn05wkn8r4dpf9500ob/TC_F_xmDNS_003/executionLog.txt">URL/Execution Log</a></td>
+        <td><a href="http://10.229.29.73:8080/job/Slave_10.229.29.65/61620/console">URL/TestCase Log</a></td>
+</tr>
+</table>
+<br>
+<br>
+<tr>ATOM : Artik Test Operation Management</tr><br>
+<tr></tr><br>
+<br>
+<tr>Framework QnA   : plussu.kim@samsung.com</tr>
+        </body>
+</html>
+
